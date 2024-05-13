@@ -16,7 +16,7 @@ namespace proyecto_final_
 
     public class paciente
     {
-        public int ID { get; set; }
+        public int IDcarnet { get; set; }
         public string Nombre_paciente { get; set; }
         public DateTime Fecha_nacimiento { get; set; }
         public int Edad { get; set; }
@@ -34,6 +34,7 @@ namespace proyecto_final_
     public class pruebas_med
     {
         public int ID { get; set; }
+        public int no_carnet { get; set; }
         public string Nombre_paciente { get; set; }
         public string Tipo_prueba { get; set; }
         public int Contacto_paciente { get; set; }
@@ -42,6 +43,7 @@ namespace proyecto_final_
     public class citas_med
     {
         public int ID { get; set; }
+        public int no_carnet { get; set; }
         public string Nombre_paciente { get; set; }
         public int Contacto_paciente { get; set; }
         public DateTime Fecha { get; set; }
