@@ -1,14 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ACER\\source\\repos\\Proyecto_final\\proyecto_final_progra\\proyecto_final_\\",
+  "WorkspaceRootPath": "C:\\Users\\ACER\\source\\repos\\proyecto_final_\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DC67ED73-EBB7-48BB-9DB2-6F771B9A32BA}|proyecto_final_\\proyecto_final_.csproj|c:\\users\\acer\\source\\repos\\proyecto_final\\proyecto_final_progra\\proyecto_final_\\proyecto_final_\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DC67ED73-EBB7-48BB-9DB2-6F771B9A32BA}|proyecto_final_\\proyecto_final_.csproj|solutionrelative:proyecto_final_\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ACER\\source\\repos\\proyecto_final_\\proyecto_final_\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:proyecto_final_\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DC67ED73-EBB7-48BB-9DB2-6F771B9A32BA}|proyecto_final_\\proyecto_final_.csproj|c:\\users\\acer\\source\\repos\\proyecto_final\\proyecto_final_progra\\proyecto_final_\\proyecto_final_\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DC67ED73-EBB7-48BB-9DB2-6F771B9A32BA}|proyecto_final_\\proyecto_final_.csproj|solutionrelative:proyecto_final_\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ACER\\source\\repos\\proyecto_final_\\proyecto_final_\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:proyecto_final_\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,21 +18,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "usuario.cs",
-              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\Proyecto_final\\proyecto_final_progra\\proyecto_final_\\proyecto_final_\\usuario.cs",
-              "RelativeDocumentMoniker": "proyecto_final_\\usuario.cs",
-              "ToolTip": "C:\\Users\\ACER\\source\\repos\\Proyecto_final\\proyecto_final_progra\\proyecto_final_\\proyecto_final_\\usuario.cs",
-              "RelativeToolTip": "proyecto_final_\\usuario.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-13T22:16:01.358Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
@@ -47,15 +34,27 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "usuario.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\proyecto_final_\\proyecto_final_\\usuario.cs",
+              "RelativeDocumentMoniker": "proyecto_final_\\usuario.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\proyecto_final_\\proyecto_final_\\usuario.cs",
+              "RelativeToolTip": "proyecto_final_\\usuario.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAADEAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T22:16:01.358Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Form1.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\Proyecto_final\\proyecto_final_progra\\proyecto_final_\\proyecto_final_\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\proyecto_final_\\proyecto_final_\\Form1.cs",
               "RelativeDocumentMoniker": "proyecto_final_\\Form1.cs",
               "ToolTip": "C:\\Users\\ACER\\source\\repos\\Proyecto_final\\proyecto_final_progra\\proyecto_final_\\proyecto_final_\\Form1.cs [Dise\u00F1o]",
-              "RelativeToolTip": "proyecto_final_\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\Proyecto_final\\proyecto_final_progra\\proyecto_final_\\proyecto_final_\\Form1.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-13T22:12:15.152Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-05-13T22:12:15.152Z"
             }
           ]
         },
