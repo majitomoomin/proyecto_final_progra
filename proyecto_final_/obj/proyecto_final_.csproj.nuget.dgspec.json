@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ACER\\source\\repos\\Proyecto_final\\proyecto_final_progra\\proyecto_final_\\proyecto_final_\\proyecto_final_.csproj": {}
+    "C:\\Users\\ACER\\source\\repos\\proyecto_final_\\proyecto_final_\\proyecto_final_.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ACER\\source\\repos\\Proyecto_final\\proyecto_final_progra\\proyecto_final_\\proyecto_final_\\proyecto_final_.csproj": {
+    "C:\\Users\\ACER\\source\\repos\\proyecto_final_\\proyecto_final_\\proyecto_final_.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ACER\\source\\repos\\Proyecto_final\\proyecto_final_progra\\proyecto_final_\\proyecto_final_\\proyecto_final_.csproj",
+        "projectUniqueName": "C:\\Users\\ACER\\source\\repos\\proyecto_final_\\proyecto_final_\\proyecto_final_.csproj",
         "projectName": "proyecto_final_",
-        "projectPath": "C:\\Users\\ACER\\source\\repos\\Proyecto_final\\proyecto_final_progra\\proyecto_final_\\proyecto_final_\\proyecto_final_.csproj",
+        "projectPath": "C:\\Users\\ACER\\source\\repos\\proyecto_final_\\proyecto_final_\\proyecto_final_.csproj",
         "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ACER\\source\\repos\\Proyecto_final\\proyecto_final_progra\\proyecto_final_\\proyecto_final_\\obj\\",
+        "outputPath": "C:\\Users\\ACER\\source\\repos\\proyecto_final_\\proyecto_final_\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
