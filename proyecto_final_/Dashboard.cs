@@ -86,7 +86,7 @@ namespace proyecto_final_
                 //textboxs
                 String Nombre = txtNombre.Text;
                 String Correo = txtCorreo.Text;
-                Int64 Contacto = Convert.ToInt64(txtNoContacto);
+                long Contacto = Convert.ToInt64(txtNoContacto);
                 int Edad = Convert.ToInt32(txtEdad.Text);
                 String Sexo = ComboSexo.Text;
                 String Sangre = txtSangre.Text;
@@ -94,23 +94,38 @@ namespace proyecto_final_
                 int pid = Convert.ToInt32(txtIDPaciente.Text);
 
                 //base de datos
-                SqlConnection con = new SqlConnection();
-                con.ConnectionString = "data souce = LAPTOP-GDV6M1II\\SQLEXPRESS; datebase = clinica; integrated security = True";
-                SqlCommand cmd = new SqlCommand();
-                cmd.Connection = con;
-                cmd.CommandText = "insert into AgregarPaciente values ('\"+ Nombre+ \"','\"+ Correo + \"','\"+ Contacto + \"','\" + Edad + \"','\" + Sexo + \"','\" + Sangre + \"','\" + Enfermedades \"','\"+ pid + \"',\")";
+                string connectionString = "data source=LAPTOP-GDV6M1II\\SQLEXPRESS;database=clinica;integrated security=True";
+                SqlConnection sqlConnection = new SqlConnection(connectionString);
+                using (SqlConnection con = sqlConnection)
+                {
+                    string query = "INSERT INTO AgregarPaciente (Nombre, Correo, Contacto, Edad, Sexo, Sangre, Enfermedades, pid) " +
+                                   "VALUES (@Nombre, @Correo, @Contacto, @Edad, @Sexo, @Sangre, @Enfermedades, @pid)";
 
-                SqlDataAdapter DA = new SqlDataAdapter(cmd);
-                DataSet DS = new DataSet();
-                DA.Fill(DS);
+                    using (SqlCommand cmd = new SqlCommand(query, con))
+                    {
+                        cmd.Parameters.AddWithValue("@Nombre", Nombre);
+                        cmd.Parameters.AddWithValue("@Correo", Correo);
+                        cmd.Parameters.AddWithValue("@Contacto", Contacto);
+                        cmd.Parameters.AddWithValue("@Edad", Edad);
+                        cmd.Parameters.AddWithValue("@Sexo", Sexo);
+                        cmd.Parameters.AddWithValue("@Sangre", Sangre);
+                        cmd.Parameters.AddWithValue("@Enfermedades", Enfermedades);
+                        cmd.Parameters.AddWithValue("@pid", pid);
+                        cmd.CommandText = "insert into AgregarPaciente values ('\"+ Nombre+ \"','\"+ Correo + \"','\"+ Contacto + \"','\" + Edad + \"','\" + Sexo + \"','\" + Sangre + \"','\" + Enfermedades \"','\"+ pid + \"',\")";
+
+                        con.Open();
+                        cmd.ExecuteNonQuery();
+                        con.Close();
+                    }
+                }
+                MessageBox.Show("Paciente agregado.");
             }
-            catch(Exception)
+            catch (Exception ex)
             {
-                MessageBox.Show("Se ingresaron datos no validos o un ID no disponible.");
+                MessageBox.Show("Se ingresaron datos no válidos o un ID no disponible. Error: " );
             }
-            MessageBox.Show("Paciente agregado.");
 
-            // para que al guardar los datos se borren los campos
+            // Limpia los campos después de guardar los datos
             txtNombre.Clear();
             txtCorreo.Clear();
             txtNoContacto.Clear();
@@ -122,3 +137,4 @@ namespace proyecto_final_
         }
     }
 }
+

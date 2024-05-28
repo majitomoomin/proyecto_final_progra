@@ -21,7 +21,7 @@ namespace proyecto_final_
             {
                 //MessageBox.Show("Has ingresado el usuario y contraseña correctos");
                 this.Hide();
-                Form2 ds = new Form2();
+                Dashboard ds = new Dashboard();
                 ds.Show();
             }
             else
