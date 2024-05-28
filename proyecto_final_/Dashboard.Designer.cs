@@ -44,8 +44,27 @@
             labelindicador3 = new Label();
             labelindicador4 = new Label();
             labelindicador5 = new Label();
+            panel1 = new Panel();
+            btnGuardarPaciente = new Button();
+            txtIDPaciente = new TextBox();
+            label_ID = new Label();
+            txtCorreo = new TextBox();
+            txtNoContacto = new TextBox();
+            txtSangre = new TextBox();
+            txtEnfermedades = new TextBox();
+            txtEdad = new TextBox();
+            labelTipoSangre = new Label();
+            labelGenero = new Label();
+            labelEdad = new Label();
+            labelEnfermedades = new Label();
+            labelContactoNum = new Label();
+            labelCorreo = new Label();
+            txtNombre = new TextBox();
+            labelNombre = new Label();
+            ComboSexo = new ComboBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // labeltitulo
@@ -208,12 +227,178 @@
             labelindicador5.TabIndex = 14;
             labelindicador5.Text = ">";
             // 
+            // panel1
+            // 
+            panel1.Controls.Add(btnGuardarPaciente);
+            panel1.Controls.Add(txtIDPaciente);
+            panel1.Controls.Add(label_ID);
+            panel1.Controls.Add(txtCorreo);
+            panel1.Controls.Add(txtNoContacto);
+            panel1.Controls.Add(txtSangre);
+            panel1.Controls.Add(txtEnfermedades);
+            panel1.Controls.Add(txtEdad);
+            panel1.Controls.Add(labelTipoSangre);
+            panel1.Controls.Add(labelGenero);
+            panel1.Controls.Add(labelEdad);
+            panel1.Controls.Add(labelEnfermedades);
+            panel1.Controls.Add(labelContactoNum);
+            panel1.Controls.Add(labelCorreo);
+            panel1.Controls.Add(txtNombre);
+            panel1.Controls.Add(labelNombre);
+            panel1.Controls.Add(ComboSexo);
+            panel1.Location = new Point(234, 60);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(715, 519);
+            panel1.TabIndex = 15;
+            // 
+            // btnGuardarPaciente
+            // 
+            btnGuardarPaciente.BackColor = Color.SkyBlue;
+            btnGuardarPaciente.Location = new Point(585, 470);
+            btnGuardarPaciente.Name = "btnGuardarPaciente";
+            btnGuardarPaciente.Size = new Size(94, 29);
+            btnGuardarPaciente.TabIndex = 17;
+            btnGuardarPaciente.Text = "Guardar";
+            btnGuardarPaciente.UseVisualStyleBackColor = false;
+            btnGuardarPaciente.Click += btnGuardarPaciente_Click;
+            // 
+            // txtIDPaciente
+            // 
+            txtIDPaciente.Location = new Point(153, 421);
+            txtIDPaciente.Name = "txtIDPaciente";
+            txtIDPaciente.Size = new Size(198, 27);
+            txtIDPaciente.TabIndex = 16;
+            // 
+            // label_ID
+            // 
+            label_ID.AutoSize = true;
+            label_ID.Location = new Point(27, 424);
+            label_ID.Name = "label_ID";
+            label_ID.Size = new Size(106, 20);
+            label_ID.TabIndex = 15;
+            label_ID.Text = "ID de paciente";
+            // 
+            // txtCorreo
+            // 
+            txtCorreo.Location = new Point(125, 92);
+            txtCorreo.Name = "txtCorreo";
+            txtCorreo.Size = new Size(556, 27);
+            txtCorreo.TabIndex = 14;
+            // 
+            // txtNoContacto
+            // 
+            txtNoContacto.Location = new Point(194, 140);
+            txtNoContacto.Name = "txtNoContacto";
+            txtNoContacto.Size = new Size(487, 27);
+            txtNoContacto.TabIndex = 13;
+            // 
+            // txtSangre
+            // 
+            txtSangre.Location = new Point(153, 286);
+            txtSangre.Name = "txtSangre";
+            txtSangre.Size = new Size(528, 27);
+            txtSangre.TabIndex = 12;
+            // 
+            // txtEnfermedades
+            // 
+            txtEnfermedades.Location = new Point(8, 364);
+            txtEnfermedades.Name = "txtEnfermedades";
+            txtEnfermedades.Size = new Size(673, 27);
+            txtEnfermedades.TabIndex = 11;
+            // 
+            // txtEdad
+            // 
+            txtEdad.Location = new Point(125, 195);
+            txtEdad.Name = "txtEdad";
+            txtEdad.Size = new Size(556, 27);
+            txtEdad.TabIndex = 9;
+            // 
+            // labelTipoSangre
+            // 
+            labelTipoSangre.AutoSize = true;
+            labelTipoSangre.Location = new Point(45, 293);
+            labelTipoSangre.Name = "labelTipoSangre";
+            labelTipoSangre.Size = new Size(110, 20);
+            labelTipoSangre.TabIndex = 8;
+            labelTipoSangre.Text = "Tipo de Sangre";
+            // 
+            // labelGenero
+            // 
+            labelGenero.AutoSize = true;
+            labelGenero.Location = new Point(62, 236);
+            labelGenero.Name = "labelGenero";
+            labelGenero.Size = new Size(41, 20);
+            labelGenero.TabIndex = 7;
+            labelGenero.Text = "Sexo";
+            // 
+            // labelEdad
+            // 
+            labelEdad.AutoSize = true;
+            labelEdad.Location = new Point(76, 198);
+            labelEdad.Name = "labelEdad";
+            labelEdad.Size = new Size(43, 20);
+            labelEdad.TabIndex = 6;
+            labelEdad.Text = "Edad";
+            // 
+            // labelEnfermedades
+            // 
+            labelEnfermedades.AutoSize = true;
+            labelEnfermedades.Location = new Point(3, 341);
+            labelEnfermedades.Name = "labelEnfermedades";
+            labelEnfermedades.Size = new Size(338, 20);
+            labelEnfermedades.TabIndex = 5;
+            labelEnfermedades.Text = "Enfermedad importante que se sufra/haya sufrido";
+            // 
+            // labelContactoNum
+            // 
+            labelContactoNum.AutoSize = true;
+            labelContactoNum.Location = new Point(42, 147);
+            labelContactoNum.Name = "labelContactoNum";
+            labelContactoNum.Size = new Size(146, 20);
+            labelContactoNum.TabIndex = 4;
+            labelContactoNum.Text = "Número de contacto";
+            // 
+            // labelCorreo
+            // 
+            labelCorreo.AutoSize = true;
+            labelCorreo.Location = new Point(65, 92);
+            labelCorreo.Name = "labelCorreo";
+            labelCorreo.Size = new Size(54, 20);
+            labelCorreo.TabIndex = 3;
+            labelCorreo.Text = "Correo";
+            // 
+            // txtNombre
+            // 
+            txtNombre.Location = new Point(125, 46);
+            txtNombre.Name = "txtNombre";
+            txtNombre.Size = new Size(556, 27);
+            txtNombre.TabIndex = 2;
+            // 
+            // labelNombre
+            // 
+            labelNombre.AutoSize = true;
+            labelNombre.Location = new Point(55, 52);
+            labelNombre.Name = "labelNombre";
+            labelNombre.Size = new Size(64, 20);
+            labelNombre.TabIndex = 1;
+            labelNombre.Text = "Nombre";
+            // 
+            // ComboSexo
+            // 
+            ComboSexo.FormattingEnabled = true;
+            ComboSexo.Items.AddRange(new object[] { "Femenino", "Masculino" });
+            ComboSexo.Location = new Point(125, 233);
+            ComboSexo.Name = "ComboSexo";
+            ComboSexo.Size = new Size(556, 28);
+            ComboSexo.TabIndex = 0;
+            // 
             // Dashboard
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(979, 614);
+            Controls.Add(panel1);
             Controls.Add(labelindicador5);
             Controls.Add(labelindicador4);
             Controls.Add(labelindicador3);
@@ -231,8 +416,11 @@
             Controls.Add(labeltitulo);
             Name = "Dashboard";
             Text = "Dashboard";
+            Load += Dashboard_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -254,5 +442,23 @@
         private Label labelindicador3;
         private Label labelindicador4;
         private Label labelindicador5;
+        private Panel panel1;
+        private ComboBox ComboSexo;
+        private TextBox txtCorreo;
+        private TextBox txtNoContacto;
+        private TextBox txtSangre;
+        private TextBox txtEnfermedades;
+        private TextBox txtEdad;
+        private Label labelTipoSangre;
+        private Label labelGenero;
+        private Label labelEdad;
+        private Label labelEnfermedades;
+        private Label labelContactoNum;
+        private Label labelCorreo;
+        private TextBox txtNombre;
+        private Label labelNombre;
+        private Label label_ID;
+        private Button btnGuardarPaciente;
+        private TextBox txtIDPaciente;
     }
 }
