@@ -228,11 +228,11 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(895, 592);
+            ClientSize = new Size(829, 592);
             Controls.Add(panel1);
             Controls.Add(labelcontrol);
             Name = "Formagreg";
-            Text = "Formagreg";
+            Text = "Agregar Pacientes";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ResumeLayout(false);
