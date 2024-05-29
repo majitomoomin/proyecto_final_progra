@@ -1,13 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using System.Data.SqlClient;
 
 namespace proyecto_final_
 {
@@ -37,8 +28,17 @@ namespace proyecto_final_
             labelindicador4.ForeColor = System.Drawing.Color.Black;
             labelindicador5.ForeColor = System.Drawing.Color.Black;
 
-            //mostrar panel de agregar pacientes
+            //mostrar ventana agregar pacientes 
             panel1.Visible = true;
+            Formagreg formagreg = new Formagreg();
+
+            formagreg.TopLevel = false; 
+            formagreg.FormBorderStyle = FormBorderStyle.None; 
+            formagreg.Dock = DockStyle.Fill; 
+            panel1.Controls.Clear();
+            panel1.Controls.Add(formagreg); 
+            formagreg.Show(); 
+
 
         }
 
@@ -81,59 +81,16 @@ namespace proyecto_final_
 
         private void btnGuardarPaciente_Click(object sender, EventArgs e)
         {
-            try
-            {
-                //textboxs
-                String Nombre = txtNombre.Text;
-                String Correo = txtCorreo.Text;
-                long Contacto = Convert.ToInt64(txtNoContacto);
-                int Edad = Convert.ToInt32(txtEdad.Text);
-                String Sexo = ComboSexo.Text;
-                String Sangre = txtSangre.Text;
-                String Enfermedades = txtEnfermedades.Text;
-                int pid = Convert.ToInt32(txtIDPaciente.Text);
+            
+        }
 
-                //base de datos
-                string connectionString = "data source=LAPTOP-GDV6M1II\\SQLEXPRESS;database=clinica;integrated security=True";
-                SqlConnection sqlConnection = new SqlConnection(connectionString);
-                using (SqlConnection con = sqlConnection)
-                {
-                    string query = "INSERT INTO AgregarPaciente (Nombre, Correo, Contacto, Edad, Sexo, Sangre, Enfermedades, pid) " +
-                                   "VALUES (@Nombre, @Correo, @Contacto, @Edad, @Sexo, @Sangre, @Enfermedades, @pid)";
-
-                    using (SqlCommand cmd = new SqlCommand(query, con))
-                    {
-                        cmd.Parameters.AddWithValue("@Nombre", Nombre);
-                        cmd.Parameters.AddWithValue("@Correo", Correo);
-                        cmd.Parameters.AddWithValue("@Contacto", Contacto);
-                        cmd.Parameters.AddWithValue("@Edad", Edad);
-                        cmd.Parameters.AddWithValue("@Sexo", Sexo);
-                        cmd.Parameters.AddWithValue("@Sangre", Sangre);
-                        cmd.Parameters.AddWithValue("@Enfermedades", Enfermedades);
-                        cmd.Parameters.AddWithValue("@pid", pid);
-                        cmd.CommandText = "insert into AgregarPaciente values ('\"+ Nombre+ \"','\"+ Correo + \"','\"+ Contacto + \"','\" + Edad + \"','\" + Sexo + \"','\" + Sangre + \"','\" + Enfermedades \"','\"+ pid + \"',\")";
-
-                        con.Open();
-                        cmd.ExecuteNonQuery();
-                        con.Close();
-                    }
-                }
-                MessageBox.Show("Paciente agregado.");
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Se ingresaron datos no válidos o un ID no disponible. Error: " );
-            }
-
-            // Limpia los campos después de guardar los datos
-            txtNombre.Clear();
-            txtCorreo.Clear();
-            txtNoContacto.Clear();
-            txtEdad.Clear();
-            ComboSexo.ResetText();
-            txtSangre.Clear();
-            txtEnfermedades.Clear();
-            txtIDPaciente.Clear();
+        private void btnCitas_Click(object sender, EventArgs e)
+        {
+            labelindicador2.ForeColor = System.Drawing.Color.Red;
+            labelindicador1.ForeColor = System.Drawing.Color.Black;
+            labelindicador3.ForeColor = System.Drawing.Color.Black;
+            labelindicador4.ForeColor = System.Drawing.Color.Black;
+            labelindicador5.ForeColor = System.Drawing.Color.Black;
         }
     }
 }
