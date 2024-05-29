@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Configuration;
 
 namespace proyecto_final_
 {
@@ -34,12 +35,12 @@ namespace proyecto_final_
 
                 //base de datos
                 string connectionString = "data source=LAPTOP-GDV6M1II\\SQLEXPRESS;database=clinica;integrated security=True";
-                using (SqlConnection con = new SqlConnection(connectionString))
+                using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     string query = "INSERT INTO AgregarPaciente (Nombre, Correo, Contact, Edad, Sexo, Tipo_sangre, Enfermedades, pid) " +
                                    "VALUES (@Nombre, @Correo, @Contact, @Edad, @Sexo, @Tipo_sangre, @Enfermedades, @pid)";
 
-                    using (SqlCommand cmd = new SqlCommand(query, con))
+                    using (SqlCommand cmd = new SqlCommand(query, connection))
                     {
                         cmd.Parameters.AddWithValue("@Nombre", Nombre);
                         cmd.Parameters.AddWithValue("@Correo", Correo);
@@ -50,9 +51,9 @@ namespace proyecto_final_
                         cmd.Parameters.AddWithValue("@Enfermedades", Enfermedades);
                         cmd.Parameters.AddWithValue("@pid", pid);
 
-                        con.Open();
+                        connection.Open();
                         cmd.ExecuteNonQuery();
-                        con.Close();
+                        connection.Close();
                     }
                 }
 
