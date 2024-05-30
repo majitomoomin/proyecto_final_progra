@@ -35,34 +35,35 @@
             labelMedicina = new Label();
             label6 = new Label();
             labelAlergias = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
-            button1 = new Button();
-            textBox5 = new TextBox();
-            textBox6 = new TextBox();
-            dataGridView1 = new DataGridView();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            txtpid = new TextBox();
+            txtSintomas = new TextBox();
+            txtDiagnosis = new TextBox();
+            txtMedicamentos = new TextBox();
+            btnGuardardiagnostico = new Button();
+            txtProcedimiento = new TextBox();
+            txtAlergias = new TextBox();
+            dataGridViewDiagnosis = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewDiagnosis).BeginInit();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(388, 9);
+            label1.Font = new Font("Times New Roman", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Location = new Point(253, -2);
             label1.Name = "label1";
-            label1.Size = new Size(50, 20);
+            label1.Size = new Size(286, 39);
             label1.TabIndex = 0;
-            label1.Text = "label1";
+            label1.Text = "Añadir diagnosticos";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(270, 53);
+            label2.Location = new Point(210, 53);
             label2.Name = "label2";
-            label2.Size = new Size(50, 20);
+            label2.Size = new Size(110, 20);
             label2.TabIndex = 1;
-            label2.Text = "label2";
+            label2.Text = "ID del paciente";
             // 
             // labelSintomas
             // 
@@ -109,79 +110,81 @@
             labelAlergias.TabIndex = 6;
             labelAlergias.Text = "Alergias y reaciones a medicamentos";
             // 
-            // textBox1
+            // txtpid
             // 
-            textBox1.Location = new Point(326, 50);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(182, 27);
-            textBox1.TabIndex = 7;
+            txtpid.Location = new Point(326, 50);
+            txtpid.Name = "txtpid";
+            txtpid.Size = new Size(182, 27);
+            txtpid.TabIndex = 7;
+            txtpid.TextChanged += txtpid_TextChanged;
             // 
-            // textBox2
+            // txtSintomas
             // 
-            textBox2.Location = new Point(108, 316);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(223, 27);
-            textBox2.TabIndex = 8;
+            txtSintomas.Location = new Point(108, 316);
+            txtSintomas.Name = "txtSintomas";
+            txtSintomas.Size = new Size(223, 27);
+            txtSintomas.TabIndex = 8;
             // 
-            // textBox3
+            // txtDiagnosis
             // 
-            textBox3.Location = new Point(108, 380);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(223, 27);
-            textBox3.TabIndex = 9;
+            txtDiagnosis.Location = new Point(108, 380);
+            txtDiagnosis.Name = "txtDiagnosis";
+            txtDiagnosis.Size = new Size(223, 27);
+            txtDiagnosis.TabIndex = 9;
             // 
-            // textBox4
+            // txtMedicamentos
             // 
-            textBox4.Location = new Point(176, 452);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(599, 27);
-            textBox4.TabIndex = 10;
+            txtMedicamentos.Location = new Point(176, 452);
+            txtMedicamentos.Name = "txtMedicamentos";
+            txtMedicamentos.Size = new Size(599, 27);
+            txtMedicamentos.TabIndex = 10;
             // 
-            // button1
+            // btnGuardardiagnostico
             // 
-            button1.Location = new Point(369, 495);
-            button1.Name = "button1";
-            button1.Size = new Size(94, 29);
-            button1.TabIndex = 13;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
+            btnGuardardiagnostico.Location = new Point(369, 495);
+            btnGuardardiagnostico.Name = "btnGuardardiagnostico";
+            btnGuardardiagnostico.Size = new Size(94, 29);
+            btnGuardardiagnostico.TabIndex = 13;
+            btnGuardardiagnostico.Text = "Guardar";
+            btnGuardardiagnostico.UseVisualStyleBackColor = true;
+            btnGuardardiagnostico.Click += btnGuardardiagnostico_Click;
             // 
-            // textBox5
+            // txtProcedimiento
             // 
-            textBox5.Location = new Point(565, 316);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(223, 27);
-            textBox5.TabIndex = 14;
+            txtProcedimiento.Location = new Point(565, 316);
+            txtProcedimiento.Name = "txtProcedimiento";
+            txtProcedimiento.Size = new Size(223, 27);
+            txtProcedimiento.TabIndex = 14;
             // 
-            // textBox6
+            // txtAlergias
             // 
-            textBox6.Location = new Point(399, 387);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(376, 27);
-            textBox6.TabIndex = 15;
+            txtAlergias.Location = new Point(399, 387);
+            txtAlergias.Name = "txtAlergias";
+            txtAlergias.Size = new Size(376, 27);
+            txtAlergias.TabIndex = 15;
             // 
-            // dataGridView1
+            // dataGridViewDiagnosis
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(-2, 110);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(830, 191);
-            dataGridView1.TabIndex = 16;
+            dataGridViewDiagnosis.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewDiagnosis.Location = new Point(-2, 110);
+            dataGridViewDiagnosis.Name = "dataGridViewDiagnosis";
+            dataGridViewDiagnosis.RowHeadersWidth = 51;
+            dataGridViewDiagnosis.Size = new Size(830, 191);
+            dataGridViewDiagnosis.TabIndex = 16;
             // 
             // FormDiagnosticos
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(829, 592);
-            Controls.Add(dataGridView1);
-            Controls.Add(textBox6);
-            Controls.Add(textBox5);
-            Controls.Add(button1);
-            Controls.Add(textBox4);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(dataGridViewDiagnosis);
+            Controls.Add(txtAlergias);
+            Controls.Add(txtProcedimiento);
+            Controls.Add(btnGuardardiagnostico);
+            Controls.Add(txtMedicamentos);
+            Controls.Add(txtDiagnosis);
+            Controls.Add(txtSintomas);
+            Controls.Add(txtpid);
             Controls.Add(labelAlergias);
             Controls.Add(label6);
             Controls.Add(labelMedicina);
@@ -192,7 +195,7 @@
             Name = "FormDiagnosticos";
             Text = "Agregar Diagnosticos";
             Load += FormDiagnosticos_Load;
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewDiagnosis).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -206,13 +209,13 @@
         private Label labelMedicina;
         private Label label6;
         private Label labelAlergias;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private TextBox textBox4;
-        private Button button1;
-        private TextBox textBox5;
-        private TextBox textBox6;
-        private DataGridView dataGridView1;
+        private TextBox txtpid;
+        private TextBox txtSintomas;
+        private TextBox txtDiagnosis;
+        private TextBox txtMedicamentos;
+        private Button btnGuardardiagnostico;
+        private TextBox txtProcedimiento;
+        private TextBox txtAlergias;
+        private DataGridView dataGridViewDiagnosis;
     }
 }

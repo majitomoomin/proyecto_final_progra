@@ -50,6 +50,17 @@ namespace proyecto_final_
             labelindicador1.ForeColor = System.Drawing.Color.Black;
             labelindicador4.ForeColor = System.Drawing.Color.Black;
             labelindicador5.ForeColor = System.Drawing.Color.Black;
+
+            //mostrar ventana diagnosticos 
+            panel1.Visible = true;
+            FormDiagnosticos formDiagnosticos = new FormDiagnosticos();
+
+            formDiagnosticos.TopLevel = false;
+            formDiagnosticos.FormBorderStyle = FormBorderStyle.None;
+            formDiagnosticos.Dock = DockStyle.Fill;
+            panel1.Controls.Clear();
+            panel1.Controls.Add(formDiagnosticos);
+            formDiagnosticos.Show();
         }
 
         private void btnHistorial_Med_Click(object sender, EventArgs e)
