@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
-            label2 = new Label();
+            labelTitulo = new Label();
+            labelpid = new Label();
             labelSintomas = new Label();
             labelDiagnosis = new Label();
             labelMedicina = new Label();
@@ -46,24 +46,24 @@
             ((System.ComponentModel.ISupportInitialize)dataGridViewDiagnosis).BeginInit();
             SuspendLayout();
             // 
-            // label1
+            // labelTitulo
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Times New Roman", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(253, -2);
-            label1.Name = "label1";
-            label1.Size = new Size(286, 39);
-            label1.TabIndex = 0;
-            label1.Text = "Añadir diagnosticos";
+            labelTitulo.AutoSize = true;
+            labelTitulo.Font = new Font("Times New Roman", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            labelTitulo.Location = new Point(253, -2);
+            labelTitulo.Name = "labelTitulo";
+            labelTitulo.Size = new Size(286, 39);
+            labelTitulo.TabIndex = 0;
+            labelTitulo.Text = "Añadir diagnosticos";
             // 
-            // label2
+            // labelpid
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(210, 53);
-            label2.Name = "label2";
-            label2.Size = new Size(110, 20);
-            label2.TabIndex = 1;
-            label2.Text = "ID del paciente";
+            labelpid.AutoSize = true;
+            labelpid.Location = new Point(210, 53);
+            labelpid.Name = "labelpid";
+            labelpid.Size = new Size(110, 20);
+            labelpid.TabIndex = 1;
+            labelpid.Text = "ID del paciente";
             // 
             // labelSintomas
             // 
@@ -190,8 +190,8 @@
             Controls.Add(labelMedicina);
             Controls.Add(labelDiagnosis);
             Controls.Add(labelSintomas);
-            Controls.Add(label2);
-            Controls.Add(label1);
+            Controls.Add(labelpid);
+            Controls.Add(labelTitulo);
             Name = "FormDiagnosticos";
             Text = "Agregar Diagnosticos";
             Load += FormDiagnosticos_Load;
@@ -202,8 +202,8 @@
 
         #endregion
 
-        private Label label1;
-        private Label label2;
+        private Label labelTitulo;
+        private Label labelpid;
         private Label labelSintomas;
         private Label labelDiagnosis;
         private Label labelMedicina;

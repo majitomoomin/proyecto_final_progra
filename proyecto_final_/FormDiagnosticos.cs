@@ -34,15 +34,21 @@ namespace proyecto_final_
                 String Alergias = txtAlergias.Text;
                 String Medicamentos = txtMedicamentos.Text;
 
-                SqlConnection con = new SqlConnection();
-                con.ConnectionString = "data source=LAPTOP-GDV6M1II\\SQLEXPRESS;database=clinica;integrated security=True";
+                using (SqlConnection con = new SqlConnection("data source=LAPTOP-GDV6M1II\\SQLEXPRESS;database=clinica;integrated security=True"))
+                {
+                    con.Open();
+                    using (SqlCommand cmd = new SqlCommand("INSERT INTO AgregarPaciente (Sintomas, Procedimiento_med, Diagnosis, Alergias, Medicamentos, pid) VALUES (@Sintomas, @Procedimiento_med, @Diagnosis, @Alergias, @Medicamentos, @pid)", con))
+                    {
+                        cmd.Parameters.AddWithValue("@Sintomas", Sintomas);
+                        cmd.Parameters.AddWithValue("@Procedimiento_med", Procedimiento_med);
+                        cmd.Parameters.AddWithValue("@Diagnosis", Diagnosis);
+                        cmd.Parameters.AddWithValue("@Alergias", Alergias);
+                        cmd.Parameters.AddWithValue("@Medicamentos", Medicamentos);
+                        cmd.Parameters.AddWithValue("@pid", pid);
 
-                SqlCommand cmd = new SqlCommand();
-                cmd.Connection = con;
-                cmd.CommandText = "insert into AgregarPaciente values("+Sintomas+",'"+ Procedimiento_med+"','"+Diagnosis+"','"+Alergias+"','"+pid+"'")";
-                SqlDataAdapter DA = new SqlDataAdapter();
-                DataSet DS = new DataSet();
-                DA.Fill(DS);
+                        cmd.ExecuteNonQuery();
+                    }
+                }
             }
             catch (Exception) 
             {
@@ -66,17 +72,18 @@ namespace proyecto_final_
             {
                 int pid = Convert.ToInt32(txtpid.Text);
 
-                SqlConnection con = new SqlConnection();
-                con.ConnectionString = "data source=LAPTOP-GDV6M1II\\SQLEXPRESS;database=clinica;integrated security=True";
+                using (SqlConnection con = new SqlConnection("data source=LAPTOP-GDV6M1II\\SQLEXPRESS;database=clinica;integrated security=True"))
+                {
+                    con.Open();
+                    using (SqlCommand cmd = new SqlCommand("SELECT * FROM AgregarPaciente WHERE pid = @pid", con))
+                    {
+                        cmd.Parameters.AddWithValue("@pid", pid);
 
-                SqlCommand cmd = new SqlCommand();
-                cmd.Connection = con;
-                cmd.CommandText = "select * from AgregarPaciente where pid = " + pid + "";
-                SqlDataAdapter DA = new SqlDataAdapter();
-                DataSet DS = new DataSet();
-                DA.Fill(DS);
-                dataGridViewDiagnosis.DataSource = DS.Tables[0];
-            }
+                        SqlDataAdapter DA = new SqlDataAdapter(cmd);
+                        DataSet DS = new DataSet();
+                        DA.Fill(DS);
+                        dataGridViewDiagnosis.DataSource = DS.Tables[0];
+                    }
         }
     }
 }
