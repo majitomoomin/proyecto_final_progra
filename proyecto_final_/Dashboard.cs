@@ -1,4 +1,5 @@
-﻿using System.Data.SqlClient;
+﻿using proyecto_final_.Properties;
+using System.Data.SqlClient;
 
 namespace proyecto_final_
 {
@@ -91,6 +92,17 @@ namespace proyecto_final_
             labelindicador3.ForeColor = System.Drawing.Color.Black;
             labelindicador4.ForeColor = System.Drawing.Color.Black;
             labelindicador5.ForeColor = System.Drawing.Color.Black;
+
+            //mostrar ventana agregar citas
+            panel1.Visible = true;
+            Citas citas = new Citas();
+
+            citas.TopLevel = false;
+            citas.FormBorderStyle = FormBorderStyle.None;
+            citas.Dock = DockStyle.Fill;
+            panel1.Controls.Clear();
+            panel1.Controls.Add(citas);
+            citas.Show();
         }
     }
 }
