@@ -43,6 +43,7 @@
             txtProcedimiento = new TextBox();
             txtAlergias = new TextBox();
             dataGridViewDiagnosis = new DataGridView();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridViewDiagnosis).BeginInit();
             SuspendLayout();
             // 
@@ -166,17 +167,27 @@
             // dataGridViewDiagnosis
             // 
             dataGridViewDiagnosis.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewDiagnosis.Location = new Point(-2, 110);
+            dataGridViewDiagnosis.Location = new Point(63, 88);
             dataGridViewDiagnosis.Name = "dataGridViewDiagnosis";
             dataGridViewDiagnosis.RowHeadersWidth = 51;
-            dataGridViewDiagnosis.Size = new Size(830, 191);
+            dataGridViewDiagnosis.Size = new Size(712, 191);
             dataGridViewDiagnosis.TabIndex = 16;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(528, 53);
+            button1.Name = "button1";
+            button1.Size = new Size(94, 29);
+            button1.TabIndex = 17;
+            button1.Text = "Guardar";
+            button1.UseVisualStyleBackColor = true;
             // 
             // FormDiagnosticos
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(829, 592);
+            Controls.Add(button1);
             Controls.Add(dataGridViewDiagnosis);
             Controls.Add(txtAlergias);
             Controls.Add(txtProcedimiento);
@@ -217,5 +228,6 @@
         private TextBox txtProcedimiento;
         private TextBox txtAlergias;
         private DataGridView dataGridViewDiagnosis;
+        private Button button1;
     }
 }

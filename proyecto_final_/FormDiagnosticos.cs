@@ -67,49 +67,12 @@ namespace proyecto_final_
             }
         }
 
-
-
-        //para que al esccribir se busque el pid y lo muestre en el datagrid
         private void txtpid_TextChanged(object sender, EventArgs e)
         {
-            ring.IsNullOrEmpty(txtpid.Text))
-            {
-                // Verificar si el texto es un número entero válido
-                if (int.TryParse(txtpid.Text, out int pid))
-                {
-                    string cadenaConexion = "Persist Security Info=False;User ID=sa; pwd=12345678;Initial Catalog=hospital;Encrypt=True;TrustServerCertificate=True;Data Source=LAPTOP-GDV6M1II\\SQLEXPRESS";
-                    try
-                    {
-                        using (SqlConnection connection = new SqlConnection(cadenaConexion))
-                        {
-                            connection.Open();
-                            using (SqlCommand cmd = new SqlCommand("SELECT * FROM AgregarPacientes WHERE pid = @pid", connection)) // Asegúrate de que la tabla es AgregarPacientes
-                            {
-                                cmd.Parameters.AddWithValue("@pid", pid);
-
-                                using (SqlDataAdapter DA = new SqlDataAdapter(cmd))
-                                {
-                                    DataSet DS = new DataSet();
-                                    DA.Fill(DS);
-                                    dataGridViewDiagnosis.DataSource = DS.Tables[0]; // Asegúrate de que dataGridViewDiagnosis está configurado correctamente
-                                }
-                            }
-                        }
-                    }
-                    catch (SqlException sqlEx)
-                    {
-                        MessageBox.Show($"Error de base de datos: {sqlEx.Message}");
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show($"Error: {ex.Message}");
-                    }
-                }
-                else
-                {
-                    MessageBox.Show("Por favor, ingrese un ID de paciente válido.");
-                }
-            }
+              
+            
         }
     }
 }
+    
+
