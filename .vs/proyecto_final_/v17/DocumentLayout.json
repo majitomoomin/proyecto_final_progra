@@ -3,40 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\ACER\\source\\repos\\proyecto_final_\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DC67ED73-EBB7-48BB-9DB2-6F771B9A32BA}|proyecto_final_\\proyecto_final_.csproj|c:\\users\\acer\\source\\repos\\proyecto_final_\\proyecto_final_\\citas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DC67ED73-EBB7-48BB-9DB2-6F771B9A32BA}|proyecto_final_\\proyecto_final_.csproj|solutionrelative:proyecto_final_\\citas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DC67ED73-EBB7-48BB-9DB2-6F771B9A32BA}|proyecto_final_\\proyecto_final_.csproj|C:\\Users\\ACER\\source\\repos\\proyecto_final_\\proyecto_final_\\citas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DC67ED73-EBB7-48BB-9DB2-6F771B9A32BA}|proyecto_final_\\proyecto_final_.csproj|solutionrelative:proyecto_final_\\citas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DC67ED73-EBB7-48BB-9DB2-6F771B9A32BA}|proyecto_final_\\proyecto_final_.csproj|C:\\Users\\ACER\\source\\repos\\proyecto_final_\\proyecto_final_\\formhistorial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{DC67ED73-EBB7-48BB-9DB2-6F771B9A32BA}|proyecto_final_\\proyecto_final_.csproj|c:\\users\\acer\\source\\repos\\proyecto_final_\\proyecto_final_\\formhistorial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{DC67ED73-EBB7-48BB-9DB2-6F771B9A32BA}|proyecto_final_\\proyecto_final_.csproj|solutionrelative:proyecto_final_\\formhistorial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DC67ED73-EBB7-48BB-9DB2-6F771B9A32BA}|proyecto_final_\\proyecto_final_.csproj|C:\\Users\\ACER\\source\\repos\\proyecto_final_\\proyecto_final_\\forminfohospital.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DC67ED73-EBB7-48BB-9DB2-6F771B9A32BA}|proyecto_final_\\proyecto_final_.csproj|solutionrelative:proyecto_final_\\forminfohospital.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DC67ED73-EBB7-48BB-9DB2-6F771B9A32BA}|proyecto_final_\\proyecto_final_.csproj|C:\\Users\\ACER\\source\\repos\\proyecto_final_\\proyecto_final_\\formhistorial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DC67ED73-EBB7-48BB-9DB2-6F771B9A32BA}|proyecto_final_\\proyecto_final_.csproj|solutionrelative:proyecto_final_\\formhistorial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DC67ED73-EBB7-48BB-9DB2-6F771B9A32BA}|proyecto_final_\\proyecto_final_.csproj|C:\\Users\\ACER\\source\\repos\\proyecto_final_\\proyecto_final_\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DC67ED73-EBB7-48BB-9DB2-6F771B9A32BA}|proyecto_final_\\proyecto_final_.csproj|solutionrelative:proyecto_final_\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DC67ED73-EBB7-48BB-9DB2-6F771B9A32BA}|proyecto_final_\\proyecto_final_.csproj|C:\\Users\\ACER\\source\\repos\\proyecto_final_\\proyecto_final_\\citas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DC67ED73-EBB7-48BB-9DB2-6F771B9A32BA}|proyecto_final_\\proyecto_final_.csproj|solutionrelative:proyecto_final_\\citas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DC67ED73-EBB7-48BB-9DB2-6F771B9A32BA}|proyecto_final_\\proyecto_final_.csproj|C:\\Users\\ACER\\source\\repos\\proyecto_final_\\proyecto_final_\\formdiagnosticos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DC67ED73-EBB7-48BB-9DB2-6F771B9A32BA}|proyecto_final_\\proyecto_final_.csproj|solutionrelative:proyecto_final_\\formdiagnosticos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DC67ED73-EBB7-48BB-9DB2-6F771B9A32BA}|proyecto_final_\\proyecto_final_.csproj|C:\\Users\\ACER\\source\\repos\\proyecto_final_\\proyecto_final_\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DC67ED73-EBB7-48BB-9DB2-6F771B9A32BA}|proyecto_final_\\proyecto_final_.csproj|solutionrelative:proyecto_final_\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{DC67ED73-EBB7-48BB-9DB2-6F771B9A32BA}|proyecto_final_\\proyecto_final_.csproj|C:\\Users\\ACER\\source\\repos\\proyecto_final_\\proyecto_final_\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC67ED73-EBB7-48BB-9DB2-6F771B9A32BA}|proyecto_final_\\proyecto_final_.csproj|solutionrelative:proyecto_final_\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC67ED73-EBB7-48BB-9DB2-6F771B9A32BA}|proyecto_final_\\proyecto_final_.csproj|C:\\Users\\ACER\\source\\repos\\proyecto_final_\\proyecto_final_\\citas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC67ED73-EBB7-48BB-9DB2-6F771B9A32BA}|proyecto_final_\\proyecto_final_.csproj|solutionrelative:proyecto_final_\\citas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC67ED73-EBB7-48BB-9DB2-6F771B9A32BA}|proyecto_final_\\proyecto_final_.csproj|C:\\Users\\ACER\\source\\repos\\proyecto_final_\\proyecto_final_\\formagreg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC67ED73-EBB7-48BB-9DB2-6F771B9A32BA}|proyecto_final_\\proyecto_final_.csproj|solutionrelative:proyecto_final_\\formagreg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DC67ED73-EBB7-48BB-9DB2-6F771B9A32BA}|proyecto_final_\\proyecto_final_.csproj|C:\\Users\\ACER\\source\\repos\\proyecto_final_\\proyecto_final_\\formagreg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{DC67ED73-EBB7-48BB-9DB2-6F771B9A32BA}|proyecto_final_\\proyecto_final_.csproj|solutionrelative:proyecto_final_\\formagreg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC67ED73-EBB7-48BB-9DB2-6F771B9A32BA}|proyecto_final_\\proyecto_final_.csproj|C:\\Users\\ACER\\source\\repos\\proyecto_final_\\proyecto_final_\\forminfohospital.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DC67ED73-EBB7-48BB-9DB2-6F771B9A32BA}|proyecto_final_\\proyecto_final_.csproj|solutionrelative:proyecto_final_\\forminfohospital.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC67ED73-EBB7-48BB-9DB2-6F771B9A32BA}|proyecto_final_\\proyecto_final_.csproj|C:\\Users\\ACER\\source\\repos\\proyecto_final_\\proyecto_final_\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DC67ED73-EBB7-48BB-9DB2-6F771B9A32BA}|proyecto_final_\\proyecto_final_.csproj|solutionrelative:proyecto_final_\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DC67ED73-EBB7-48BB-9DB2-6F771B9A32BA}|proyecto_final_\\proyecto_final_.csproj|C:\\Users\\ACER\\source\\repos\\proyecto_final_\\proyecto_final_\\paciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -45,10 +49,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{DC67ED73-EBB7-48BB-9DB2-6F771B9A32BA}|proyecto_final_\\proyecto_final_.csproj|C:\\Users\\ACER\\source\\repos\\proyecto_final_\\proyecto_final_\\formdiagnosticos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{DC67ED73-EBB7-48BB-9DB2-6F771B9A32BA}|proyecto_final_\\proyecto_final_.csproj|solutionrelative:proyecto_final_\\formdiagnosticos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DC67ED73-EBB7-48BB-9DB2-6F771B9A32BA}|proyecto_final_\\proyecto_final_.csproj|C:\\Users\\ACER\\source\\repos\\proyecto_final_\\proyecto_final_\\formagreg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DC67ED73-EBB7-48BB-9DB2-6F771B9A32BA}|proyecto_final_\\proyecto_final_.csproj|solutionrelative:proyecto_final_\\formagreg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,7 +58,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -74,40 +74,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FormInfoHospital.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\proyecto_final_\\proyecto_final_\\FormInfoHospital.cs",
-              "RelativeDocumentMoniker": "proyecto_final_\\FormInfoHospital.cs",
-              "ToolTip": "C:\\Users\\ACER\\source\\repos\\proyecto_final_\\proyecto_final_\\FormInfoHospital.cs [Dise\u00F1o]",
-              "RelativeToolTip": "proyecto_final_\\FormInfoHospital.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-31T04:40:36.308Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "FormHistorial.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\proyecto_final_\\proyecto_final_\\FormHistorial.cs",
               "RelativeDocumentMoniker": "proyecto_final_\\FormHistorial.cs",
               "ToolTip": "C:\\Users\\ACER\\source\\repos\\proyecto_final_\\proyecto_final_\\FormHistorial.cs [Dise\u00F1o]",
               "RelativeToolTip": "proyecto_final_\\FormHistorial.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-31T04:40:31.714Z"
+              "WhenOpened": "2024-05-31T04:40:31.714Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "FormDiagnosticos.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\proyecto_final_\\proyecto_final_\\FormDiagnosticos.cs",
-              "RelativeDocumentMoniker": "proyecto_final_\\FormDiagnosticos.cs",
-              "ToolTip": "C:\\Users\\ACER\\source\\repos\\proyecto_final_\\proyecto_final_\\FormDiagnosticos.cs [Dise\u00F1o]",
-              "RelativeToolTip": "proyecto_final_\\FormDiagnosticos.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-31T04:38:58.403Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "FormDiagnosticos.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\proyecto_final_\\proyecto_final_\\FormDiagnosticos.cs",
               "RelativeDocumentMoniker": "proyecto_final_\\FormDiagnosticos.cs",
@@ -119,56 +98,99 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "citas.cs [Design]",
+              "DocumentIndex": 2,
+              "Title": "citas.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\proyecto_final_\\proyecto_final_\\citas.cs",
               "RelativeDocumentMoniker": "proyecto_final_\\citas.cs",
-              "ToolTip": "C:\\Users\\ACER\\source\\repos\\proyecto_final_\\proyecto_final_\\citas.cs [Design]",
-              "RelativeToolTip": "proyecto_final_\\citas.cs [Design]",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\proyecto_final_\\proyecto_final_\\citas.cs [Dise\u00F1o]",
+              "RelativeToolTip": "proyecto_final_\\citas.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-31T04:38:58.597Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-31T04:38:58.597Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "Dashboard.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\proyecto_final_\\proyecto_final_\\Dashboard.cs",
               "RelativeDocumentMoniker": "proyecto_final_\\Dashboard.cs",
               "ToolTip": "C:\\Users\\ACER\\source\\repos\\proyecto_final_\\proyecto_final_\\Dashboard.cs",
               "RelativeToolTip": "proyecto_final_\\Dashboard.cs",
-              "ViewState": "AQIAAFAAAAAAAAAAAAAcwGcAAAAyAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGcAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-31T04:38:58.598Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "citas.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\proyecto_final_\\proyecto_final_\\citas.cs",
               "RelativeDocumentMoniker": "proyecto_final_\\citas.cs",
               "ToolTip": "C:\\Users\\ACER\\source\\repos\\proyecto_final_\\proyecto_final_\\citas.cs",
               "RelativeToolTip": "proyecto_final_\\citas.cs",
-              "ViewState": "AQIAAB0AAAAAAAAAAAAgwAcAAAASAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAwAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-31T04:38:58.6Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-31T04:38:58.6Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
+              "Title": "Formagreg.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\proyecto_final_\\proyecto_final_\\Formagreg.cs",
+              "RelativeDocumentMoniker": "proyecto_final_\\Formagreg.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\proyecto_final_\\proyecto_final_\\Formagreg.cs [Dise\u00F1o]",
+              "RelativeToolTip": "proyecto_final_\\Formagreg.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T04:38:58.605Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Formagreg.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\proyecto_final_\\proyecto_final_\\Formagreg.cs",
+              "RelativeDocumentMoniker": "proyecto_final_\\Formagreg.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\proyecto_final_\\proyecto_final_\\Formagreg.cs",
+              "RelativeToolTip": "proyecto_final_\\Formagreg.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAswBgAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T04:39:00.096Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "FormHistorial.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\proyecto_final_\\proyecto_final_\\FormHistorial.cs",
               "RelativeDocumentMoniker": "proyecto_final_\\FormHistorial.cs",
               "ToolTip": "C:\\Users\\ACER\\source\\repos\\proyecto_final_\\proyecto_final_\\FormHistorial.cs",
               "RelativeToolTip": "proyecto_final_\\FormHistorial.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAAAAAA",
+              "ViewState": "AQIAABYAAAAAAAAAAAAQwCUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-31T04:41:07.424Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
+              "Title": "FormDiagnosticos.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\proyecto_final_\\proyecto_final_\\FormDiagnosticos.cs",
+              "RelativeDocumentMoniker": "proyecto_final_\\FormDiagnosticos.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\proyecto_final_\\proyecto_final_\\FormDiagnosticos.cs [Dise\u00F1o]",
+              "RelativeToolTip": "proyecto_final_\\FormDiagnosticos.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T04:38:58.403Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FormInfoHospital.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\proyecto_final_\\proyecto_final_\\FormInfoHospital.cs",
+              "RelativeDocumentMoniker": "proyecto_final_\\FormInfoHospital.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\proyecto_final_\\proyecto_final_\\FormInfoHospital.cs [Dise\u00F1o]",
+              "RelativeToolTip": "proyecto_final_\\FormInfoHospital.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T04:40:36.308Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "paciente.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\proyecto_final_\\proyecto_final_\\paciente.cs",
               "RelativeDocumentMoniker": "proyecto_final_\\paciente.cs",
@@ -180,18 +202,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Formagreg.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\proyecto_final_\\proyecto_final_\\Formagreg.cs",
-              "RelativeDocumentMoniker": "proyecto_final_\\Formagreg.cs",
-              "ToolTip": "C:\\Users\\Flex\\Desktop\\Proyecto F-Progra\\proyecto_final_\\Formagreg.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\..\\Flex\\Desktop\\Proyecto F-Progra\\proyecto_final_\\Formagreg.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
-              "WhenOpened": "2024-05-31T04:38:58.605Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "Dashboard.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\proyecto_final_\\proyecto_final_\\Dashboard.cs",
               "RelativeDocumentMoniker": "proyecto_final_\\Dashboard.cs",
@@ -199,18 +210,6 @@
               "RelativeToolTip": "proyecto_final_\\Dashboard.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-31T04:39:00.085Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Formagreg.cs",
-              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\proyecto_final_\\proyecto_final_\\Formagreg.cs",
-              "RelativeDocumentMoniker": "proyecto_final_\\Formagreg.cs",
-              "ToolTip": "C:\\Users\\ACER\\source\\repos\\proyecto_final_\\proyecto_final_\\Formagreg.cs",
-              "RelativeToolTip": "proyecto_final_\\Formagreg.cs",
-              "ViewState": "AQIAADYAAAAAAAAAAAAYwD0AAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
-              "WhenOpened": "2024-05-31T04:39:00.096Z"
             }
           ]
         },

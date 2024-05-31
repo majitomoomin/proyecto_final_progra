@@ -30,6 +30,7 @@
         {
             label1 = new Label();
             dataGridViewHistorial = new DataGridView();
+            btnMostrarHistorial = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridViewHistorial).BeginInit();
             SuspendLayout();
             // 
@@ -47,19 +48,32 @@
             // dataGridViewHistorial
             // 
             dataGridViewHistorial.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewHistorial.Location = new Point(15, 91);
+            dataGridViewHistorial.Location = new Point(111, 91);
             dataGridViewHistorial.Margin = new Padding(2);
             dataGridViewHistorial.Name = "dataGridViewHistorial";
             dataGridViewHistorial.RowHeadersWidth = 82;
-            dataGridViewHistorial.Size = new Size(892, 501);
+            dataGridViewHistorial.Size = new Size(713, 367);
             dataGridViewHistorial.TabIndex = 1;
             dataGridViewHistorial.CellContentClick += dataGridViewHistorial_CellContentClick;
+            // 
+            // btnMostrarHistorial
+            // 
+            btnMostrarHistorial.BackColor = SystemColors.GradientActiveCaption;
+            btnMostrarHistorial.Location = new Point(614, 26);
+            btnMostrarHistorial.Margin = new Padding(3, 4, 3, 4);
+            btnMostrarHistorial.Name = "btnMostrarHistorial";
+            btnMostrarHistorial.Size = new Size(154, 36);
+            btnMostrarHistorial.TabIndex = 9;
+            btnMostrarHistorial.Text = "Mostrar Pacientes";
+            btnMostrarHistorial.UseVisualStyleBackColor = false;
+            btnMostrarHistorial.Click += btnMostrarHistorial_Click;
             // 
             // FormHistorial
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(914, 600);
+            Controls.Add(btnMostrarHistorial);
             Controls.Add(dataGridViewHistorial);
             Controls.Add(label1);
             Margin = new Padding(4);
@@ -75,5 +89,6 @@
 
         private Label label1;
         private DataGridView dataGridViewHistorial;
+        private Button btnMostrarHistorial;
     }
 }
