@@ -28,6 +28,7 @@ namespace proyecto_final_.Properties
             try
             {
                 //textboxs
+                int pid = Convert.ToInt32(txtpid.Text);
                 string nombrePaciente = txtNombrePaciente.Text;
                 DateTime fechaCita = dtpFechaCita.Value;
                 DateTime horaCita = dtpHoraCita.Value;
@@ -44,11 +45,12 @@ namespace proyecto_final_.Properties
                 string connectionString = "data source=LAPTOP-GDV6M1II\\SQLEXPRESS;database=clinica;integrated security=True";
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
-                    string query = "INSERT INTO Citas (NombrePaciente, FechaCita, HoraCita, MotivoCita) " +
+                    string query = "INSERT INTO Citas (ID, NombrePaciente, FechaCita, HoraCita, MotivoCita) " +
                                    "VALUES (@NombrePaciente, @FechaCita, @HoraCita, @MotivoCita)";
 
                     using (SqlCommand cmd = new SqlCommand(query, connection))
                     {
+                        cmd.Parameters.AddWithValue("@ID", pid);
                         cmd.Parameters.AddWithValue("@NombrePaciente", nombrePaciente);
                         cmd.Parameters.AddWithValue("@FechaCita", fechaCita);
                         cmd.Parameters.AddWithValue("@HoraCita", horaCita);
@@ -69,6 +71,7 @@ namespace proyecto_final_.Properties
 
             // Limpia los campos después de guardar los datos
             txtNombrePaciente.Clear();
+            txtpid.Clear();
             dtpFechaCita.Value = DateTime.Now;
             dtpHoraCita.Value = DateTime.Now;
             txtMotivoCita.Clear();

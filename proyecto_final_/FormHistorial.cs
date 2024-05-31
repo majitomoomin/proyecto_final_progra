@@ -21,7 +21,7 @@ namespace proyecto_final_
             {
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = con;
-                cmd.CommandText = "select * from AddPatient inner join ParientMore on AddPatient.pid = PatientMore.pid";
+                cmd.CommandText = "select * from AgregarPaciente inner join PacienteMas on AgregarPaciente.pid = PacienteMas.pid";
                 SqlDataAdapter adapter = new SqlDataAdapter(cmd);
                 DataSet dataSet = new DataSet();
                 adapter.Fill(dataSet);
@@ -29,6 +29,11 @@ namespace proyecto_final_
             }
         }
         private void FormHistorial_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridViewHistorial_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

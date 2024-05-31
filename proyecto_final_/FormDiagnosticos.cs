@@ -37,7 +37,7 @@ namespace proyecto_final_
                 using (SqlConnection con = new SqlConnection("data source=LAPTOP-GDV6M1II\\SQLEXPRESS;database=clinica;integrated security=True"))
                 {
                     con.Open();
-                    using (SqlCommand cmd = new SqlCommand("INSERT INTO AgregarPaciente (Sintomas, Procedimiento_med, Diagnosis, Alergias, Medicamentos, pid) VALUES (@Sintomas, @Procedimiento_med, @Diagnosis, @Alergias, @Medicamentos, @pid)", con))
+                    using (SqlCommand cmd = new SqlCommand("INSERT INTO PacienteMas (Sintomas, Procedimiento_med, Diagnosis, Alergias, Medicamentos, pid) VALUES (@Sintomas, @Procedimiento_med, @Diagnosis, @Alergias, @Medicamentos, @pid)", con))
                     {
                         cmd.Parameters.AddWithValue("@Sintomas", Sintomas);
                         cmd.Parameters.AddWithValue("@Procedimiento_med", Procedimiento_med);
@@ -75,7 +75,7 @@ namespace proyecto_final_
                 using (SqlConnection con = new SqlConnection("data source=LAPTOP-GDV6M1II\\SQLEXPRESS;database=clinica;integrated security=True"))
                 {
                     con.Open();
-                    using (SqlCommand cmd = new SqlCommand("SELECT * FROM AgregarPaciente WHERE pid = @pid", con))
+                    using (SqlCommand cmd = new SqlCommand("SELECT * FROM PacienteMas WHERE pid = @pid", con))
                     {
                         cmd.Parameters.AddWithValue("@pid", pid);
 
