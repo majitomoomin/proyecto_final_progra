@@ -11,15 +11,16 @@ namespace proyecto_final_
         {
 
         }
+        public static string UsuarioLogeado { get; private set; }
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
             String usuario = txtUsuario.Text;
             String contraseña = txtContraseña.Text;
 
-            if( usuario == "Alicia Lima" && contraseña == "1234")
+            if (usuario == "Alicia Lima" && contraseña == "1234")
             {
-                //MessageBox.Show("Has ingresado el usuario y contraseña correctos");
+                UsuarioLogeado = usuario; // Guardar el nombre del usuario que inició sesión
                 this.Hide();
                 Dashboard ds = new Dashboard();
                 ds.Show();
@@ -28,6 +29,11 @@ namespace proyecto_final_
             {
                 MessageBox.Show("El nombre de usuario o contraseña es incorrecto");
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
