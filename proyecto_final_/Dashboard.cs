@@ -1,5 +1,7 @@
 ﻿using proyecto_final_.Properties;
+using System.Data;
 using System.Data.SqlClient;
+using System.Security.Cryptography;
 
 namespace proyecto_final_
 {
@@ -70,6 +72,17 @@ namespace proyecto_final_
             labelindicador3.ForeColor = System.Drawing.Color.Black;
             labelindicador1.ForeColor = System.Drawing.Color.Black;
             labelindicador5.ForeColor = System.Drawing.Color.Black;
+            panel1.Visible = true;
+
+            FormHistorial formhistorial = new FormHistorial();
+
+            formhistorial.TopLevel = false;
+            formhistorial.FormBorderStyle = FormBorderStyle.None;
+            formhistorial.Dock = DockStyle.Fill;
+            panel1.Controls.Clear();
+            panel1.Controls.Add(formhistorial);
+            formhistorial.Show();
+            
         }
 
         private void btnInfo_Click(object sender, EventArgs e)
@@ -79,6 +92,18 @@ namespace proyecto_final_
             labelindicador3.ForeColor = System.Drawing.Color.Black;
             labelindicador4.ForeColor = System.Drawing.Color.Black;
             labelindicador1.ForeColor = System.Drawing.Color.Black;
+
+            panel1.Visible = true;
+
+            FormInfoHospital forminfohospital = new FormInfoHospital();
+
+            forminfohospital.TopLevel = false;
+            forminfohospital.FormBorderStyle = FormBorderStyle.None;
+            forminfohospital.Dock = DockStyle.Fill;
+            panel1.Controls.Clear();
+            panel1.Controls.Add(forminfohospital);
+            forminfohospital.Show();
+
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
