@@ -75,11 +75,26 @@ namespace proyecto_final_.Properties
             dtpFechaCita.Value = DateTime.Now;
             dtpHoraCita.Value = DateTime.Now;
             txtMotivoCita.Clear();
+
+
+            using (SqlConnection con = new SqlConnection("data source=LAPTOP-GDV6M1II\\SQLEXPRESS;database=clinica;integrated security=True"))
+            {
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = con;
+                cmd.CommandText = "select * from AgregarPaciente inner join PacienteMas on AgregarPaciente.pid = PacienteMas.pid";
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                DataSet dataSet = new DataSet();
+                adapter.Fill(dataSet);
+                dgwCitas.DataSource = dataSet.Tables[0];
+            }
         }
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
+        private void dgwCitas_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+        }
     }
 }
