@@ -5,6 +5,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -28,16 +29,17 @@ namespace proyecto_final_
             try
             {
                 int pid = Convert.ToInt32(txtpid.Text);
-                String Sintomas = txtSintomas.Text;
-                String Procedimiento_med = txtProcedimiento.Text;
-                String Diagnosis = txtDiagnosis.Text;
-                String Alergias = txtAlergias.Text;
-                String Medicamentos = txtMedicamentos.Text;
+                string Sintomas = txtSintomas.Text;
+                string Procedimiento_med = txtProcedimiento.Text;
+                string Diagnosis = txtDiagnosis.Text;
+                string Alergias = txtAlergias.Text;
+                string Medicamentos = txtMedicamentos.Text;
 
-                using (SqlConnection con = new SqlConnection("data source=LAPTOP-GDV6M1II\\SQLEXPRESS;database=clinica;integrated security=True"))
+                string cadenaConexion = "Persist Security Info=False;User ID=sa; pwd=12345678;Initial Catalog=hospital;Encrypt=True;TrustServerCertificate=True;Data Source=LAPTOP-GDV6M1II\\SQLEXPRESS";
+                using (SqlConnection connection = new SqlConnection(cadenaConexion))
                 {
-                    con.Open();
-                    using (SqlCommand cmd = new SqlCommand("INSERT INTO PacienteMas (Sintomas, Procedimiento_med, Diagnosis, Alergias, Medicamentos, pid) VALUES (@Sintomas, @Procedimiento_med, @Diagnosis, @Alergias, @Medicamentos, @pid)", con))
+                    connection.Open();
+                    using (SqlCommand cmd = new SqlCommand("INSERT INTO PacientesMas (Sintomas, Procedimiento_med, Diagnosis, Alergias, Medicamentos, pid) VALUES (@Sintomas, @Procedimiento_med, @Diagnosis, @Alergias, @Medicamentos, @pid)", connection))
                     {
                         cmd.Parameters.AddWithValue("@Sintomas", Sintomas);
                         cmd.Parameters.AddWithValue("@Procedimiento_med", Procedimiento_med);
@@ -49,41 +51,63 @@ namespace proyecto_final_
                         cmd.ExecuteNonQuery();
                     }
                 }
+                MessageBox.Show("Guardado");
+
+                // Limpia los campos después de guardar los datos
+                txtSintomas.Clear();
+                txtProcedimiento.Clear();
+                txtDiagnosis.Clear();
+                txtAlergias.Clear();
+                txtMedicamentos.Clear();
+                txtpid.Clear();
             }
             catch (Exception)
             {
-                MessageBox.Show("No se encontro o algún caracter es incorrecto");
+                MessageBox.Show("No se encontró el registro o algún carácter es incorrecto.");
             }
-            MessageBox.Show("Guardado");
-
-            // Limpia los campos después de guardar los datos
-            txtSintomas.Clear();
-            txtProcedimiento.Clear();
-            txtDiagnosis.Clear();
-            txtAlergias.Clear();
-            txtMedicamentos.Clear();
-            txtpid.Clear();
         }
+
+
 
         //para que al esccribir se busque el pid y lo muestre en el datagrid
         private void txtpid_TextChanged(object sender, EventArgs e)
         {
-            if (txtpid.Text != "")
+            ring.IsNullOrEmpty(txtpid.Text))
             {
-                int pid = Convert.ToInt32(txtpid.Text);
-
-                using (SqlConnection con = new SqlConnection("data source=LAPTOP-GDV6M1II\\SQLEXPRESS;database=clinica;integrated security=True"))
+                // Verificar si el texto es un número entero válido
+                if (int.TryParse(txtpid.Text, out int pid))
                 {
-                    con.Open();
-                    using (SqlCommand cmd = new SqlCommand("SELECT * FROM PacienteMas WHERE pid = @pid", con))
+                    string cadenaConexion = "Persist Security Info=False;User ID=sa; pwd=12345678;Initial Catalog=hospital;Encrypt=True;TrustServerCertificate=True;Data Source=LAPTOP-GDV6M1II\\SQLEXPRESS";
+                    try
                     {
-                        cmd.Parameters.AddWithValue("@pid", pid);
+                        using (SqlConnection connection = new SqlConnection(cadenaConexion))
+                        {
+                            connection.Open();
+                            using (SqlCommand cmd = new SqlCommand("SELECT * FROM AgregarPacientes WHERE pid = @pid", connection)) // Asegúrate de que la tabla es AgregarPacientes
+                            {
+                                cmd.Parameters.AddWithValue("@pid", pid);
 
-                        SqlDataAdapter DA = new SqlDataAdapter(cmd);
-                        DataSet DS = new DataSet();
-                        DA.Fill(DS);
-                        dataGridViewDiagnosis.DataSource = DS.Tables[0];
+                                using (SqlDataAdapter DA = new SqlDataAdapter(cmd))
+                                {
+                                    DataSet DS = new DataSet();
+                                    DA.Fill(DS);
+                                    dataGridViewDiagnosis.DataSource = DS.Tables[0]; // Asegúrate de que dataGridViewDiagnosis está configurado correctamente
+                                }
+                            }
+                        }
                     }
+                    catch (SqlException sqlEx)
+                    {
+                        MessageBox.Show($"Error de base de datos: {sqlEx.Message}");
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show($"Error: {ex.Message}");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Por favor, ingrese un ID de paciente válido.");
                 }
             }
         }
