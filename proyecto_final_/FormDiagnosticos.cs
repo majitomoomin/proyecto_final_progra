@@ -69,8 +69,13 @@ namespace proyecto_final_
 
         private void txtpid_TextChanged(object sender, EventArgs e)
         {
-              
-            
+
+
+        }
+
+        private void btnbuscarpid_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
