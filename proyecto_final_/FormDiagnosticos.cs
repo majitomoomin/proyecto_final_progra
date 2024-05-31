@@ -50,7 +50,7 @@ namespace proyecto_final_
                     }
                 }
             }
-            catch (Exception) 
+            catch (Exception)
             {
                 MessageBox.Show("No se encontro o algún caracter es incorrecto");
             }
@@ -84,6 +84,8 @@ namespace proyecto_final_
                         DA.Fill(DS);
                         dataGridViewDiagnosis.DataSource = DS.Tables[0];
                     }
+                }
+            }
         }
     }
 }

@@ -141,7 +141,7 @@
             // 
             // btnGuardardiagnostico
             // 
-            btnGuardardiagnostico.Location = new Point(369, 495);
+            btnGuardardiagnostico.Location = new Point(308, 496);
             btnGuardardiagnostico.Name = "btnGuardardiagnostico";
             btnGuardardiagnostico.Size = new Size(94, 29);
             btnGuardardiagnostico.TabIndex = 13;
