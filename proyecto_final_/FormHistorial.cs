@@ -17,17 +17,8 @@ namespace proyecto_final_
         {
             InitializeComponent();
 
-            using (SqlConnection con = new SqlConnection("data source=LAPTOP-GDV6M1II\\SQLEXPRESS;database=clinica;integrated security=True"))
-            {
-                SqlCommand cmd = new SqlCommand();
-                cmd.Connection = con;
-                cmd.CommandText = "select * from AgregarPaciente inner join PacienteMas on AgregarPaciente.pid = PacienteMas.pid";
-                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
-                DataSet dataSet = new DataSet();
-                adapter.Fill(dataSet);
-                dataGridViewHistorial.DataSource = dataSet.Tables[0];
-            }
         }
+
         private void FormHistorial_Load(object sender, EventArgs e)
         {
 
@@ -37,5 +28,48 @@ namespace proyecto_final_
         {
 
         }
+
+        private void btnMostrarHistorial_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Cadena de conexión
+                string cadenaConexion = "Persist Security Info=False;User ID=sa; pwd=12345678;Initial Catalog=hospital;Encrypt=True;TrustServerCertificate=True;Data Source=LAPTOP-GDV6M1II\\SQLEXPRESS";
+
+                // Abrir la conexión usando la cadena de conexión
+                using (SqlConnection con = new SqlConnection(cadenaConexion))
+                {
+                    con.Open();
+
+                    // selecciona datos de ambas tablas relacionadas por pid
+                    string consulta = "SELECT * FROM AgregarPaciente INNER JOIN PacienteMas ON AgregarPaciente.pid = PacienteMas.pid";
+
+                    // Crear comando SQL usando la conexión abierta
+                    using (SqlCommand cmd = new SqlCommand(consulta, con))
+                    {
+                        SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                        DataSet dataSet = new DataSet();
+                        adapter.Fill(dataSet);
+                        if (dataSet.Tables.Count > 0 && dataSet.Tables[0].Rows.Count > 0)
+                        {
+                            dataGridViewHistorial.DataSource = dataSet.Tables[0];
+                        }
+                        else
+                        {
+                            MessageBox.Show("No se encontraron registros.");
+                        }
+                    }
+                }
+            }
+            catch (SqlException sqlEx)
+            {
+                MessageBox.Show($"Error de base de datos: {sqlEx.Message}");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error: {ex.Message}");
+            }
+        }
     }
 }
+

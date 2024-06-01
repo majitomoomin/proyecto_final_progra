@@ -17,6 +17,16 @@ namespace proyecto_final_.Properties
         public Citas()
         {
             InitializeComponent();
+            using (SqlConnection con = new SqlConnection("Persist Security Info=False;User ID=sa; pwd=12345678;Initial Catalog=hospital;Encrypt=True;TrustServerCertificate=True;Data Source=LAPTOP-GDV6M1II\\SQLEXPRESS"))
+            {
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = con;
+                cmd.CommandText = "select * from Citas";
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                DataSet dataSet = new DataSet();
+                adapter.Fill(dataSet);
+                dgwCitas.DataSource = dataSet.Tables[0];
+            }
         }
 
         private void Citas_Load(object sender, EventArgs e)
@@ -27,7 +37,7 @@ namespace proyecto_final_.Properties
         {
             try
             {
-                //textboxs
+                // Textboxes
                 int pid = Convert.ToInt32(txtpid.Text);
                 string nombrePaciente = txtNombrePaciente.Text;
                 DateTime fechaCita = dtpFechaCita.Value;
@@ -41,19 +51,19 @@ namespace proyecto_final_.Properties
                     return;
                 }
 
-                //base de datos
-                string connectionString = "data source=LAPTOP-GDV6M1II\\SQLEXPRESS;database=clinica;integrated security=True";
-                using (SqlConnection connection = new SqlConnection(connectionString))
+                // Base de datos conexión
+                string cadenaConexion = "Persist Security Info=False;User ID=sa; pwd=12345678;Initial Catalog=hospital;Encrypt=True;TrustServerCertificate=True;Data Source=LAPTOP-GDV6M1II\\SQLEXPRESS";
+                using (SqlConnection connection = new SqlConnection(cadenaConexion))
                 {
-                    string query = "INSERT INTO Citas (ID, NombrePaciente, FechaCita, HoraCita, MotivoCita) " +
-                                   "VALUES (@NombrePaciente, @FechaCita, @HoraCita, @MotivoCita)";
+                    string query = "INSERT INTO Citas (pid, NombrePaciente, FechaCita, HoraCita, MotivoCita) " +
+                                   "VALUES (@pid, @NombrePaciente, @FechaCita, @HoraCita, @MotivoCita)";
 
                     using (SqlCommand cmd = new SqlCommand(query, connection))
                     {
-                        cmd.Parameters.AddWithValue("@ID", pid);
+                        cmd.Parameters.AddWithValue("@pid", pid);
                         cmd.Parameters.AddWithValue("@NombrePaciente", nombrePaciente);
-                        cmd.Parameters.AddWithValue("@FechaCita", fechaCita);
-                        cmd.Parameters.AddWithValue("@HoraCita", horaCita);
+                        cmd.Parameters.AddWithValue("@FechaCita", fechaCita.Date); // Solo la fecha
+                        cmd.Parameters.AddWithValue("@HoraCita", horaCita.TimeOfDay); // Solo la hora
                         cmd.Parameters.AddWithValue("@MotivoCita", motivoCita);
 
                         connection.Open();
@@ -64,29 +74,17 @@ namespace proyecto_final_.Properties
 
                 MessageBox.Show("Cita guardada");
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                MessageBox.Show("Se ingresaron datos no válidos. Error: ");
+                MessageBox.Show("Se ingresaron datos no válidos. Error: " + ex.Message + "\nDetalles: " + ex.StackTrace);
             }
 
-            // Limpia los campos después de guardar los datos
+            // Limpiar los campos después de guardar los datos
             txtNombrePaciente.Clear();
             txtpid.Clear();
             dtpFechaCita.Value = DateTime.Now;
             dtpHoraCita.Value = DateTime.Now;
             txtMotivoCita.Clear();
-
-
-            using (SqlConnection con = new SqlConnection("data source=LAPTOP-GDV6M1II\\SQLEXPRESS;database=clinica;integrated security=True"))
-            {
-                SqlCommand cmd = new SqlCommand();
-                cmd.Connection = con;
-                cmd.CommandText = "select * from AgregarPaciente inner join PacienteMas on AgregarPaciente.pid = PacienteMas.pid";
-                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
-                DataSet dataSet = new DataSet();
-                adapter.Fill(dataSet);
-                dgwCitas.DataSource = dataSet.Tables[0];
-            }
         }
         private void button2_Click(object sender, EventArgs e)
         {

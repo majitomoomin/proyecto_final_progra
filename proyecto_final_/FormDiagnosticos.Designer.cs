@@ -43,6 +43,7 @@
             txtProcedimiento = new TextBox();
             txtAlergias = new TextBox();
             dataGridViewDiagnosis = new DataGridView();
+            btnbuscarpid = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridViewDiagnosis).BeginInit();
             SuspendLayout();
             // 
@@ -141,12 +142,13 @@
             // 
             // btnGuardardiagnostico
             // 
+            btnGuardardiagnostico.BackColor = Color.SkyBlue;
             btnGuardardiagnostico.Location = new Point(308, 496);
             btnGuardardiagnostico.Name = "btnGuardardiagnostico";
             btnGuardardiagnostico.Size = new Size(94, 29);
             btnGuardardiagnostico.TabIndex = 13;
             btnGuardardiagnostico.Text = "Guardar";
-            btnGuardardiagnostico.UseVisualStyleBackColor = true;
+            btnGuardardiagnostico.UseVisualStyleBackColor = false;
             btnGuardardiagnostico.Click += btnGuardardiagnostico_Click;
             // 
             // txtProcedimiento
@@ -166,17 +168,29 @@
             // dataGridViewDiagnosis
             // 
             dataGridViewDiagnosis.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewDiagnosis.Location = new Point(-2, 110);
+            dataGridViewDiagnosis.Location = new Point(63, 88);
             dataGridViewDiagnosis.Name = "dataGridViewDiagnosis";
             dataGridViewDiagnosis.RowHeadersWidth = 51;
-            dataGridViewDiagnosis.Size = new Size(830, 191);
+            dataGridViewDiagnosis.Size = new Size(712, 191);
             dataGridViewDiagnosis.TabIndex = 16;
+            // 
+            // btnbuscarpid
+            // 
+            btnbuscarpid.BackColor = Color.SkyBlue;
+            btnbuscarpid.Location = new Point(528, 53);
+            btnbuscarpid.Name = "btnbuscarpid";
+            btnbuscarpid.Size = new Size(94, 29);
+            btnbuscarpid.TabIndex = 17;
+            btnbuscarpid.Text = "Buscar";
+            btnbuscarpid.UseVisualStyleBackColor = false;
+            btnbuscarpid.Click += btnbuscarpid_Click;
             // 
             // FormDiagnosticos
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(829, 592);
+            Controls.Add(btnbuscarpid);
             Controls.Add(dataGridViewDiagnosis);
             Controls.Add(txtAlergias);
             Controls.Add(txtProcedimiento);
@@ -217,5 +231,6 @@
         private TextBox txtProcedimiento;
         private TextBox txtAlergias;
         private DataGridView dataGridViewDiagnosis;
+        private Button btnbuscarpid;
     }
 }
