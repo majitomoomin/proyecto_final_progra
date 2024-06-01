@@ -26,18 +26,7 @@ namespace proyecto_final_
 
         private void dataGridViewHistorial_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex >= 0)
-            {
-                DataGridViewRow row = dataGridViewListado.Rows[e.RowIndex];
-                txtIDPaciente.Text = row.Cells["pid"].Value.ToString();
-                txtNombre.Text = row.Cells["Nombre"].Value.ToString();
-                txtCorreo.Text = row.Cells["Correo"].Value.ToString();
-                txtNoContacto.Text = row.Cells["Contact"].Value.ToString();
-                txtEdad.Text = row.Cells["Edad"].Value.ToString();
-                ComboSexo.Text = row.Cells["Sexo"].Value.ToString();
-                txtSangre.Text = row.Cells["Tipo_sangre"].Value.ToString();
-                txtEnfermedades.Text = row.Cells["Enfermedades"].Value.ToString();
-            }
+         
         }
 
         private void btnMostrarHistorial_Click(object sender, EventArgs e)

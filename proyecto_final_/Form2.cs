@@ -48,31 +48,7 @@ namespace proyecto_final_
         //boton para eliminar campos de pacientes
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            try
-            {
-                string cadenaConexion = "Persist Security Info=False;User ID=sa; pwd=12345678;Initial Catalog=hospital;Encrypt=True;TrustServerCertificate=True;Data Source=LAPTOP-GDV6M1II\\SQLEXPRESS";
-                using (SqlConnection connection = new SqlConnection(cadenaConexion))
-                {
-                    string query = "DELETE FROM AgregarPaciente WHERE pid=@pid";
-
-                    using (SqlCommand cmd = new SqlCommand(query, connection))
-                    {
-                        cmd.Parameters.AddWithValue("@pid", txtIDPaciente.Text);
-
-                        connection.Open();
-                        cmd.ExecuteNonQuery();
-                        connection.Close();
-                    }
-                }
-
-                MessageBox.Show("Paciente eliminado.");
-                LoadData();
-                panelcampos.Visible = false; // Ocultar panel después de eliminar
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Ocurrió un error: {ex.Message}");
-            }
+           
         }
 
         private void btnGuardarPaciente_Click(object sender, EventArgs e)
@@ -108,6 +84,22 @@ namespace proyecto_final_
             catch (Exception ex)
             {
                 MessageBox.Show($"Ocurrió un error: {ex.Message}");
+            }
+        }
+
+        private void dataGridViewListado_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = dataGridViewListado.Rows[e.RowIndex];
+                txtIDPaciente.Text = row.Cells["pid"].Value.ToString();
+                txtNombre.Text = row.Cells["Nombre"].Value.ToString();
+                txtCorreo.Text = row.Cells["Correo"].Value.ToString();
+                txtNoContacto.Text = row.Cells["Contact"].Value.ToString();
+                txtEdad.Text = row.Cells["Edad"].Value.ToString();
+                ComboSexo.Text = row.Cells["Sexo"].Value.ToString();
+                txtSangre.Text = row.Cells["Tipo_sangre"].Value.ToString();
+                txtEnfermedades.Text = row.Cells["Enfermedades"].Value.ToString();
             }
         }
     }

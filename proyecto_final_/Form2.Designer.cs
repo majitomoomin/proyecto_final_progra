@@ -31,20 +31,19 @@
             label2 = new Label();
             dataGridViewListado = new DataGridView();
             btnSalir = new Button();
-            btnEliminar = new Button();
-            labelNombre = new Label();
-            txtNombre = new TextBox();
-            labelCorreo = new Label();
-            txtCorreo = new TextBox();
-            labelContactoNum = new Label();
-            txtNoContacto = new TextBox();
-            labelEdad = new Label();
-            txtEdad = new TextBox();
             labelGenero = new Label();
             ComboSexo = new ComboBox();
-            labelTipoSangre = new Label();
-            txtSangre = new TextBox();
             panelcampos = new Panel();
+            txtSangre = new TextBox();
+            labelTipoSangre = new Label();
+            txtEdad = new TextBox();
+            labelEdad = new Label();
+            txtNoContacto = new TextBox();
+            labelContactoNum = new Label();
+            txtCorreo = new TextBox();
+            labelCorreo = new Label();
+            txtNombre = new TextBox();
+            label1 = new Label();
             btnGuardarPaciente = new Button();
             txtIDPaciente = new TextBox();
             label_ID = new Label();
@@ -74,6 +73,7 @@
             dataGridViewListado.RowHeadersWidth = 82;
             dataGridViewListado.Size = new Size(837, 158);
             dataGridViewListado.TabIndex = 2;
+            dataGridViewListado.CellContentClick += dataGridViewListado_CellContentClick;
             // 
             // btnSalir
             // 
@@ -85,81 +85,6 @@
             btnSalir.Text = "Editar";
             btnSalir.UseVisualStyleBackColor = false;
             btnSalir.Click += btnSalir_Click;
-            // 
-            // btnEliminar
-            // 
-            btnEliminar.BackColor = Color.Red;
-            btnEliminar.Location = new Point(486, 13);
-            btnEliminar.Name = "btnEliminar";
-            btnEliminar.Size = new Size(114, 37);
-            btnEliminar.TabIndex = 12;
-            btnEliminar.Text = "Eliminar";
-            btnEliminar.UseVisualStyleBackColor = false;
-            btnEliminar.Click += btnEliminar_Click;
-            // 
-            // labelNombre
-            // 
-            labelNombre.AutoSize = true;
-            labelNombre.Location = new Point(76, 252);
-            labelNombre.Name = "labelNombre";
-            labelNombre.Size = new Size(64, 20);
-            labelNombre.TabIndex = 13;
-            labelNombre.Text = "Nombre";
-            // 
-            // txtNombre
-            // 
-            txtNombre.Location = new Point(146, 252);
-            txtNombre.Name = "txtNombre";
-            txtNombre.Size = new Size(225, 27);
-            txtNombre.TabIndex = 14;
-            // 
-            // labelCorreo
-            // 
-            labelCorreo.AutoSize = true;
-            labelCorreo.Location = new Point(412, 259);
-            labelCorreo.Name = "labelCorreo";
-            labelCorreo.Size = new Size(54, 20);
-            labelCorreo.TabIndex = 15;
-            labelCorreo.Text = "Correo";
-            // 
-            // txtCorreo
-            // 
-            txtCorreo.Location = new Point(472, 256);
-            txtCorreo.Name = "txtCorreo";
-            txtCorreo.Size = new Size(357, 27);
-            txtCorreo.TabIndex = 16;
-            // 
-            // labelContactoNum
-            // 
-            labelContactoNum.AutoSize = true;
-            labelContactoNum.Location = new Point(14, 93);
-            labelContactoNum.Name = "labelContactoNum";
-            labelContactoNum.Size = new Size(146, 20);
-            labelContactoNum.TabIndex = 17;
-            labelContactoNum.Text = "Número de contacto";
-            // 
-            // txtNoContacto
-            // 
-            txtNoContacto.Location = new Point(164, 89);
-            txtNoContacto.Name = "txtNoContacto";
-            txtNoContacto.Size = new Size(188, 27);
-            txtNoContacto.TabIndex = 18;
-            // 
-            // labelEdad
-            // 
-            labelEdad.AutoSize = true;
-            labelEdad.Location = new Point(412, 318);
-            labelEdad.Name = "labelEdad";
-            labelEdad.Size = new Size(43, 20);
-            labelEdad.TabIndex = 19;
-            labelEdad.Text = "Edad";
-            // 
-            // txtEdad
-            // 
-            txtEdad.Location = new Point(472, 315);
-            txtEdad.Name = "txtEdad";
-            txtEdad.Size = new Size(346, 27);
-            txtEdad.TabIndex = 20;
             // 
             // labelGenero
             // 
@@ -179,38 +104,110 @@
             ComboSexo.Size = new Size(305, 28);
             ComboSexo.TabIndex = 22;
             // 
-            // labelTipoSangre
-            // 
-            labelTipoSangre.AutoSize = true;
-            labelTipoSangre.Location = new Point(412, 372);
-            labelTipoSangre.Name = "labelTipoSangre";
-            labelTipoSangre.Size = new Size(110, 20);
-            labelTipoSangre.TabIndex = 23;
-            labelTipoSangre.Text = "Tipo de Sangre";
-            // 
-            // txtSangre
-            // 
-            txtSangre.Location = new Point(528, 369);
-            txtSangre.Name = "txtSangre";
-            txtSangre.Size = new Size(290, 27);
-            txtSangre.TabIndex = 24;
-            // 
             // panelcampos
             // 
+            panelcampos.Controls.Add(txtSangre);
+            panelcampos.Controls.Add(labelTipoSangre);
+            panelcampos.Controls.Add(txtEdad);
+            panelcampos.Controls.Add(labelEdad);
+            panelcampos.Controls.Add(txtNoContacto);
+            panelcampos.Controls.Add(labelContactoNum);
+            panelcampos.Controls.Add(txtCorreo);
+            panelcampos.Controls.Add(labelCorreo);
+            panelcampos.Controls.Add(txtNombre);
+            panelcampos.Controls.Add(label1);
             panelcampos.Controls.Add(btnGuardarPaciente);
             panelcampos.Controls.Add(txtIDPaciente);
             panelcampos.Controls.Add(label_ID);
             panelcampos.Controls.Add(txtEnfermedades);
             panelcampos.Controls.Add(labelEnfermedades);
             panelcampos.Controls.Add(labelGenero);
-            panelcampos.Controls.Add(labelContactoNum);
             panelcampos.Controls.Add(ComboSexo);
-            panelcampos.Controls.Add(txtNoContacto);
             panelcampos.Location = new Point(46, 222);
             panelcampos.Margin = new Padding(2, 1, 2, 1);
             panelcampos.Name = "panelcampos";
             panelcampos.Size = new Size(822, 368);
             panelcampos.TabIndex = 25;
+            // 
+            // txtSangre
+            // 
+            txtSangre.Location = new Point(473, 147);
+            txtSangre.Name = "txtSangre";
+            txtSangre.Size = new Size(290, 27);
+            txtSangre.TabIndex = 26;
+            // 
+            // labelTipoSangre
+            // 
+            labelTipoSangre.AutoSize = true;
+            labelTipoSangre.Location = new Point(366, 150);
+            labelTipoSangre.Name = "labelTipoSangre";
+            labelTipoSangre.Size = new Size(110, 20);
+            labelTipoSangre.TabIndex = 26;
+            labelTipoSangre.Text = "Tipo de Sangre";
+            // 
+            // txtEdad
+            // 
+            txtEdad.Location = new Point(417, 96);
+            txtEdad.Name = "txtEdad";
+            txtEdad.Size = new Size(346, 27);
+            txtEdad.TabIndex = 26;
+            // 
+            // labelEdad
+            // 
+            labelEdad.AutoSize = true;
+            labelEdad.Location = new Point(377, 96);
+            labelEdad.Name = "labelEdad";
+            labelEdad.Size = new Size(43, 20);
+            labelEdad.TabIndex = 26;
+            labelEdad.Text = "Edad";
+            // 
+            // txtNoContacto
+            // 
+            txtNoContacto.Location = new Point(153, 89);
+            txtNoContacto.Name = "txtNoContacto";
+            txtNoContacto.Size = new Size(188, 27);
+            txtNoContacto.TabIndex = 29;
+            // 
+            // labelContactoNum
+            // 
+            labelContactoNum.AutoSize = true;
+            labelContactoNum.Location = new Point(6, 93);
+            labelContactoNum.Name = "labelContactoNum";
+            labelContactoNum.Size = new Size(146, 20);
+            labelContactoNum.TabIndex = 28;
+            labelContactoNum.Text = "Número de contacto";
+            // 
+            // txtCorreo
+            // 
+            txtCorreo.Location = new Point(426, 34);
+            txtCorreo.Name = "txtCorreo";
+            txtCorreo.Size = new Size(357, 27);
+            txtCorreo.TabIndex = 26;
+            // 
+            // labelCorreo
+            // 
+            labelCorreo.AutoSize = true;
+            labelCorreo.Location = new Point(366, 41);
+            labelCorreo.Name = "labelCorreo";
+            labelCorreo.Size = new Size(54, 20);
+            labelCorreo.TabIndex = 26;
+            labelCorreo.Text = "Correo";
+            // 
+            // txtNombre
+            // 
+            txtNombre.Location = new Point(116, 31);
+            txtNombre.Name = "txtNombre";
+            txtNombre.Size = new Size(225, 27);
+            txtNombre.TabIndex = 26;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(30, 34);
+            label1.Name = "label1";
+            label1.Size = new Size(64, 20);
+            label1.TabIndex = 26;
+            label1.Text = "Nombre";
             // 
             // btnGuardarPaciente
             // 
@@ -260,15 +257,6 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(914, 600);
-            Controls.Add(txtSangre);
-            Controls.Add(labelTipoSangre);
-            Controls.Add(txtEdad);
-            Controls.Add(labelEdad);
-            Controls.Add(txtCorreo);
-            Controls.Add(labelCorreo);
-            Controls.Add(txtNombre);
-            Controls.Add(labelNombre);
-            Controls.Add(btnEliminar);
             Controls.Add(btnSalir);
             Controls.Add(dataGridViewListado);
             Controls.Add(label2);
@@ -289,24 +277,23 @@
         private Label label2;
         private DataGridView dataGridViewListado;
         private Button btnSalir;
-        private Button btnEliminar;
-        private Label labelNombre;
-        private TextBox txtNombre;
-        private Label labelCorreo;
-        private TextBox txtCorreo;
-        private Label labelContactoNum;
-        private TextBox txtNoContacto;
-        private Label labelEdad;
-        private TextBox txtEdad;
         private Label labelGenero;
         private ComboBox ComboSexo;
-        private Label labelTipoSangre;
-        private TextBox txtSangre;
         private Panel panelcampos;
         private Label labelEnfermedades;
         private TextBox txtEnfermedades;
         private Label label_ID;
         private TextBox txtIDPaciente;
         private Button btnGuardarPaciente;
+        private TextBox txtNoContacto;
+        private Label labelContactoNum;
+        private TextBox txtCorreo;
+        private Label labelCorreo;
+        private TextBox txtNombre;
+        private Label label1;
+        private TextBox txtEdad;
+        private Label labelEdad;
+        private TextBox txtSangre;
+        private Label labelTipoSangre;
     }
 }
