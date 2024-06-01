@@ -26,7 +26,7 @@ namespace proyecto_final_
 
         private void dataGridViewHistorial_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+         
         }
 
         private void btnMostrarHistorial_Click(object sender, EventArgs e)

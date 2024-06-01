@@ -17,11 +17,15 @@ namespace proyecto_final_.Properties
         public Citas()
         {
             InitializeComponent();
+            LoadData();
+        }
+        private void LoadData()
+        {
             using (SqlConnection con = new SqlConnection("Persist Security Info=False;User ID=sa; pwd=12345678;Initial Catalog=hospital;Encrypt=True;TrustServerCertificate=True;Data Source=LAPTOP-GDV6M1II\\SQLEXPRESS"))
             {
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = con;
-                cmd.CommandText = "select * from Citas";
+                cmd.CommandText = "SELECT * FROM Citas";
                 SqlDataAdapter adapter = new SqlDataAdapter(cmd);
                 DataSet dataSet = new DataSet();
                 adapter.Fill(dataSet);
@@ -37,33 +41,42 @@ namespace proyecto_final_.Properties
         {
             try
             {
-                // Textboxes
                 int pid = Convert.ToInt32(txtpid.Text);
                 string nombrePaciente = txtNombrePaciente.Text;
                 DateTime fechaCita = dtpFechaCita.Value;
                 DateTime horaCita = dtpHoraCita.Value;
                 string motivoCita = txtMotivoCita.Text;
 
-                // Validar que todos los campos requeridos están completos
                 if (string.IsNullOrEmpty(nombrePaciente) || string.IsNullOrEmpty(motivoCita))
                 {
                     MessageBox.Show("Por favor, complete todos los campos.");
                     return;
                 }
 
-                // Base de datos conexión
                 string cadenaConexion = "Persist Security Info=False;User ID=sa; pwd=12345678;Initial Catalog=hospital;Encrypt=True;TrustServerCertificate=True;Data Source=LAPTOP-GDV6M1II\\SQLEXPRESS";
                 using (SqlConnection connection = new SqlConnection(cadenaConexion))
                 {
-                    string query = "INSERT INTO Citas (pid, NombrePaciente, FechaCita, HoraCita, MotivoCita) " +
-                                   "VALUES (@pid, @NombrePaciente, @FechaCita, @HoraCita, @MotivoCita)";
+                    string query;
+
+                    if (string.IsNullOrEmpty(txtpid.Text) || txtpid.Text == "0")
+                    {
+                        query = "INSERT INTO Citas (NombrePaciente, FechaCita, HoraCita, MotivoCita) VALUES (@NombrePaciente, @FechaCita, @HoraCita, @MotivoCita)";
+                    }
+                    else
+                    {
+                        query = "UPDATE Citas SET NombrePaciente=@NombrePaciente, FechaCita=@FechaCita, HoraCita=@HoraCita, MotivoCita=@MotivoCita WHERE pid=@pid";
+                    }
 
                     using (SqlCommand cmd = new SqlCommand(query, connection))
                     {
-                        cmd.Parameters.AddWithValue("@pid", pid);
+                        if (query.Contains("UPDATE"))
+                        {
+                            cmd.Parameters.AddWithValue("@pid", pid);
+                        }
+
                         cmd.Parameters.AddWithValue("@NombrePaciente", nombrePaciente);
-                        cmd.Parameters.AddWithValue("@FechaCita", fechaCita.Date); // Solo la fecha
-                        cmd.Parameters.AddWithValue("@HoraCita", horaCita.TimeOfDay); // Solo la hora
+                        cmd.Parameters.AddWithValue("@FechaCita", fechaCita.Date);
+                        cmd.Parameters.AddWithValue("@HoraCita", horaCita.TimeOfDay);
                         cmd.Parameters.AddWithValue("@MotivoCita", motivoCita);
 
                         connection.Open();
@@ -72,19 +85,20 @@ namespace proyecto_final_.Properties
                     }
                 }
 
-                MessageBox.Show("Cita guardada");
+                MessageBox.Show("Cita guardada.");
+                LoadData();
+
+                // Limpiar los campos después de guardar los datos
+                txtpid.Clear();
+                txtNombrePaciente.Clear();
+                dtpFechaCita.Value = DateTime.Now;
+                dtpHoraCita.Value = DateTime.Now;
+                txtMotivoCita.Clear();
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Se ingresaron datos no válidos. Error: " + ex.Message + "\nDetalles: " + ex.StackTrace);
             }
-
-            // Limpiar los campos después de guardar los datos
-            txtNombrePaciente.Clear();
-            txtpid.Clear();
-            dtpFechaCita.Value = DateTime.Now;
-            dtpHoraCita.Value = DateTime.Now;
-            txtMotivoCita.Clear();
         }
         private void button2_Click(object sender, EventArgs e)
         {
@@ -93,6 +107,20 @@ namespace proyecto_final_.Properties
 
         private void dgwCitas_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = dgwCitas.Rows[e.RowIndex];
+                txtpid.Text = row.Cells["pid"].Value.ToString();
+                txtNombrePaciente.Text = row.Cells["NombrePaciente"].Value.ToString();
+                dtpFechaCita.Value = Convert.ToDateTime(row.Cells["FechaCita"].Value);
+                dtpHoraCita.Value = DateTime.Today.Add(Convert.ToDateTime(row.Cells["HoraCita"].Value).TimeOfDay);
+                txtMotivoCita.Text = row.Cells["MotivoCita"].Value.ToString();
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

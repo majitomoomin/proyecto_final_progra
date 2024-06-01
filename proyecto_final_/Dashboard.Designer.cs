@@ -57,9 +57,9 @@
             // 
             labeltitulo.AutoSize = true;
             labeltitulo.Font = new Font("Times New Roman", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            labeltitulo.Location = new Point(323, 7);
+            labeltitulo.Location = new Point(369, 9);
             labeltitulo.Name = "labeltitulo";
-            labeltitulo.Size = new Size(340, 31);
+            labeltitulo.Size = new Size(419, 38);
             labeltitulo.TabIndex = 0;
             labeltitulo.Text = "Clínica Médica Dr. Gonzalo";
             labeltitulo.Click += labeltitulo_Click;
@@ -67,10 +67,14 @@
             // btnAgregar_pacientes
             // 
             btnAgregar_pacientes.BackColor = Color.SkyBlue;
+<<<<<<< HEAD
             btnAgregar_pacientes.Location = new Point(29, 58);
             btnAgregar_pacientes.Margin = new Padding(3, 2, 3, 2);
+=======
+            btnAgregar_pacientes.Location = new Point(33, 95);
+>>>>>>> 472b688b93ebc8f5ce91fa5bc59549ecb0be37be
             btnAgregar_pacientes.Name = "btnAgregar_pacientes";
-            btnAgregar_pacientes.Size = new Size(170, 22);
+            btnAgregar_pacientes.Size = new Size(194, 29);
             btnAgregar_pacientes.TabIndex = 1;
             btnAgregar_pacientes.Text = "Agregar nuevo paciente";
             btnAgregar_pacientes.UseVisualStyleBackColor = false;
@@ -79,10 +83,14 @@
             // btnDiagnostico
             // 
             btnDiagnostico.BackColor = Color.SkyBlue;
+<<<<<<< HEAD
             btnDiagnostico.Location = new Point(29, 134);
             btnDiagnostico.Margin = new Padding(3, 2, 3, 2);
+=======
+            btnDiagnostico.Location = new Point(34, 204);
+>>>>>>> 472b688b93ebc8f5ce91fa5bc59549ecb0be37be
             btnDiagnostico.Name = "btnDiagnostico";
-            btnDiagnostico.Size = new Size(170, 38);
+            btnDiagnostico.Size = new Size(194, 51);
             btnDiagnostico.TabIndex = 2;
             btnDiagnostico.Text = "Agregar información de diagnóstico";
             btnDiagnostico.UseVisualStyleBackColor = false;
@@ -91,10 +99,14 @@
             // btnHistorial_Med
             // 
             btnHistorial_Med.BackColor = Color.SkyBlue;
+<<<<<<< HEAD
             btnHistorial_Med.Location = new Point(29, 190);
             btnHistorial_Med.Margin = new Padding(3, 2, 3, 2);
+=======
+            btnHistorial_Med.Location = new Point(34, 280);
+>>>>>>> 472b688b93ebc8f5ce91fa5bc59549ecb0be37be
             btnHistorial_Med.Name = "btnHistorial_Med";
-            btnHistorial_Med.Size = new Size(170, 22);
+            btnHistorial_Med.Size = new Size(194, 29);
             btnHistorial_Med.TabIndex = 3;
             btnHistorial_Med.Text = "Historial Médico";
             btnHistorial_Med.UseVisualStyleBackColor = false;
@@ -103,10 +115,14 @@
             // btnInfo
             // 
             btnInfo.BackColor = Color.SkyBlue;
+<<<<<<< HEAD
             btnInfo.Location = new Point(29, 315);
             btnInfo.Margin = new Padding(3, 2, 3, 2);
+=======
+            btnInfo.Location = new Point(34, 392);
+>>>>>>> 472b688b93ebc8f5ce91fa5bc59549ecb0be37be
             btnInfo.Name = "btnInfo";
-            btnInfo.Size = new Size(170, 22);
+            btnInfo.Size = new Size(194, 29);
             btnInfo.TabIndex = 4;
             btnInfo.Text = "Información del hospital";
             btnInfo.UseVisualStyleBackColor = false;
@@ -116,19 +132,23 @@
             // 
             labelcontrol.AutoSize = true;
             labelcontrol.Font = new Font("Times New Roman", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            labelcontrol.Location = new Point(65, 16);
+            labelcontrol.Location = new Point(74, 21);
             labelcontrol.Name = "labelcontrol";
-            labelcontrol.Size = new Size(90, 22);
+            labelcontrol.Size = new Size(109, 25);
             labelcontrol.TabIndex = 5;
             labelcontrol.Text = "Controles";
             // 
             // btnCitas
             // 
             btnCitas.BackColor = Color.SkyBlue;
+<<<<<<< HEAD
             btnCitas.Location = new Point(29, 96);
             btnCitas.Margin = new Padding(3, 2, 3, 2);
+=======
+            btnCitas.Location = new Point(33, 147);
+>>>>>>> 472b688b93ebc8f5ce91fa5bc59549ecb0be37be
             btnCitas.Name = "btnCitas";
-            btnCitas.Size = new Size(170, 22);
+            btnCitas.Size = new Size(194, 29);
             btnCitas.TabIndex = 6;
             btnCitas.Text = "Agregar nueva cita";
             btnCitas.UseVisualStyleBackColor = false;
@@ -137,20 +157,23 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(205, 45);
-            pictureBox1.Margin = new Padding(3, 2, 3, 2);
+            pictureBox1.Location = new Point(234, 60);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(739, 410);
+            pictureBox1.Size = new Size(845, 547);
             pictureBox1.TabIndex = 7;
             pictureBox1.TabStop = false;
             // 
             // btnSalir
             // 
             btnSalir.BackColor = Color.LightCoral;
+<<<<<<< HEAD
             btnSalir.Location = new Point(55, 342);
             btnSalir.Margin = new Padding(3, 2, 3, 2);
+=======
+            btnSalir.Location = new Point(63, 440);
+>>>>>>> 472b688b93ebc8f5ce91fa5bc59549ecb0be37be
             btnSalir.Name = "btnSalir";
-            btnSalir.Size = new Size(100, 22);
+            btnSalir.Size = new Size(114, 29);
             btnSalir.TabIndex = 8;
             btnSalir.Text = "Salir";
             btnSalir.UseVisualStyleBackColor = false;
@@ -159,10 +182,14 @@
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+<<<<<<< HEAD
             pictureBox2.Location = new Point(5, 377);
             pictureBox2.Margin = new Padding(3, 2, 3, 2);
+=======
+            pictureBox2.Location = new Point(6, 475);
+>>>>>>> 472b688b93ebc8f5ce91fa5bc59549ecb0be37be
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(194, 78);
+            pictureBox2.Size = new Size(222, 104);
             pictureBox2.TabIndex = 9;
             pictureBox2.TabStop = false;
             // 
@@ -171,9 +198,13 @@
             labelindicador1.AutoSize = true;
             labelindicador1.BackColor = Color.White;
             labelindicador1.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+<<<<<<< HEAD
             labelindicador1.Location = new Point(11, 61);
+=======
+            labelindicador1.Location = new Point(13, 95);
+>>>>>>> 472b688b93ebc8f5ce91fa5bc59549ecb0be37be
             labelindicador1.Name = "labelindicador1";
-            labelindicador1.Size = new Size(18, 19);
+            labelindicador1.Size = new Size(21, 23);
             labelindicador1.TabIndex = 10;
             labelindicador1.Text = ">";
             // 
@@ -182,9 +213,13 @@
             labelindicador2.AutoSize = true;
             labelindicador2.BackColor = Color.White;
             labelindicador2.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+<<<<<<< HEAD
             labelindicador2.Location = new Point(11, 99);
+=======
+            labelindicador2.Location = new Point(13, 147);
+>>>>>>> 472b688b93ebc8f5ce91fa5bc59549ecb0be37be
             labelindicador2.Name = "labelindicador2";
-            labelindicador2.Size = new Size(18, 19);
+            labelindicador2.Size = new Size(21, 23);
             labelindicador2.TabIndex = 11;
             labelindicador2.Text = ">";
             // 
@@ -193,9 +228,13 @@
             labelindicador3.AutoSize = true;
             labelindicador3.BackColor = Color.White;
             labelindicador3.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+<<<<<<< HEAD
             labelindicador3.Location = new Point(11, 143);
+=======
+            labelindicador3.Location = new Point(13, 216);
+>>>>>>> 472b688b93ebc8f5ce91fa5bc59549ecb0be37be
             labelindicador3.Name = "labelindicador3";
-            labelindicador3.Size = new Size(18, 19);
+            labelindicador3.Size = new Size(21, 23);
             labelindicador3.TabIndex = 12;
             labelindicador3.Text = ">";
             labelindicador3.Click += label3_Click;
@@ -205,9 +244,13 @@
             labelindicador4.AutoSize = true;
             labelindicador4.BackColor = Color.White;
             labelindicador4.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+<<<<<<< HEAD
             labelindicador4.Location = new Point(11, 190);
+=======
+            labelindicador4.Location = new Point(13, 280);
+>>>>>>> 472b688b93ebc8f5ce91fa5bc59549ecb0be37be
             labelindicador4.Name = "labelindicador4";
-            labelindicador4.Size = new Size(18, 19);
+            labelindicador4.Size = new Size(21, 23);
             labelindicador4.TabIndex = 13;
             labelindicador4.Text = ">";
             // 
@@ -216,18 +259,22 @@
             labelindicador5.AutoSize = true;
             labelindicador5.BackColor = Color.White;
             labelindicador5.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+<<<<<<< HEAD
             labelindicador5.Location = new Point(11, 315);
+=======
+            labelindicador5.Location = new Point(13, 392);
+>>>>>>> 472b688b93ebc8f5ce91fa5bc59549ecb0be37be
             labelindicador5.Name = "labelindicador5";
-            labelindicador5.Size = new Size(18, 19);
+            labelindicador5.Size = new Size(21, 23);
             labelindicador5.TabIndex = 14;
             labelindicador5.Text = ">";
             // 
             // panel1
             // 
-            panel1.Location = new Point(205, 45);
+            panel1.Location = new Point(234, 60);
             panel1.Margin = new Padding(2, 1, 2, 1);
             panel1.Name = "panel1";
-            panel1.Size = new Size(745, 410);
+            panel1.Size = new Size(851, 649);
             panel1.TabIndex = 15;
             // 
             // label1
@@ -235,19 +282,27 @@
             label1.AutoSize = true;
             label1.BackColor = Color.White;
             label1.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+<<<<<<< HEAD
             label1.Location = new Point(11, 231);
+=======
+            label1.Location = new Point(13, 336);
+>>>>>>> 472b688b93ebc8f5ce91fa5bc59549ecb0be37be
             label1.Name = "label1";
-            label1.Size = new Size(18, 19);
+            label1.Size = new Size(21, 23);
             label1.TabIndex = 16;
             label1.Text = ">";
             // 
             // btnMensajes
             // 
             btnMensajes.BackColor = Color.SkyBlue;
+<<<<<<< HEAD
             btnMensajes.Location = new Point(29, 228);
             btnMensajes.Margin = new Padding(3, 2, 3, 2);
+=======
+            btnMensajes.Location = new Point(33, 335);
+>>>>>>> 472b688b93ebc8f5ce91fa5bc59549ecb0be37be
             btnMensajes.Name = "btnMensajes";
-            btnMensajes.Size = new Size(170, 22);
+            btnMensajes.Size = new Size(194, 29);
             btnMensajes.TabIndex = 17;
             btnMensajes.Text = "Mensajes";
             btnMensajes.UseVisualStyleBackColor = false;
@@ -278,12 +333,16 @@
             // 
             // Dashboard
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
+<<<<<<< HEAD
             ClientSize = new Size(969, 477);
             Controls.Add(label2);
             Controls.Add(btnNotas);
+=======
+            ClientSize = new Size(1107, 727);
+>>>>>>> 472b688b93ebc8f5ce91fa5bc59549ecb0be37be
             Controls.Add(btnMensajes);
             Controls.Add(label1);
             Controls.Add(panel1);
@@ -302,7 +361,6 @@
             Controls.Add(btnDiagnostico);
             Controls.Add(btnAgregar_pacientes);
             Controls.Add(labeltitulo);
-            Margin = new Padding(3, 2, 3, 2);
             Name = "Dashboard";
             Text = "Dashboard";
             Load += Dashboard_Load;
