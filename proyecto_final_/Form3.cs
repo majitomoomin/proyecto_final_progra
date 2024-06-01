@@ -50,10 +50,10 @@ namespace proyecto_final_
                     using (SqlCommand cmd = new SqlCommand(query, connection))
                     {
                         cmd.Parameters.AddWithValue("@pid", pid);
-                        cmd.Parameters.AddWithValue("@Sintomas", txtSintomas.Text);
-                        cmd.Parameters.AddWithValue("@Observaciones", txtObservaciones.Text);
-                        cmd.Parameters.AddWithValue("@DiagnosticoProvisional", txtDiagnosticoProv.Text);
-                        cmd.Parameters.AddWithValue("@PlanTratamiento", txtPlanTra.Text);
+                        cmd.Parameters.AddWithValue("@Sintomas", sintomas);
+                        cmd.Parameters.AddWithValue("@Observaciones", observaciones);
+                        cmd.Parameters.AddWithValue("@DiagnosticoProvisional", diagnosticoProvisional);
+                        cmd.Parameters.AddWithValue("@PlanTratamiento", planTratamiento);
 
                         cmd.ExecuteNonQuery();
                     }

@@ -7,20 +7,20 @@
       "RelativeMoniker": "D:0:0:{DC67ED73-EBB7-48BB-9DB2-6F771B9A32BA}|proyecto_final_\\proyecto_final_.csproj|solutionrelative:proyecto_final_\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DC67ED73-EBB7-48BB-9DB2-6F771B9A32BA}|proyecto_final_\\proyecto_final_.csproj|C:\\Users\\ACER\\source\\repos\\proyecto_final_\\proyecto_final_\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DC67ED73-EBB7-48BB-9DB2-6F771B9A32BA}|proyecto_final_\\proyecto_final_.csproj|solutionrelative:proyecto_final_\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DC67ED73-EBB7-48BB-9DB2-6F771B9A32BA}|proyecto_final_\\proyecto_final_.csproj|C:\\Users\\ACER\\source\\repos\\proyecto_final_\\proyecto_final_\\citas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DC67ED73-EBB7-48BB-9DB2-6F771B9A32BA}|proyecto_final_\\proyecto_final_.csproj|solutionrelative:proyecto_final_\\citas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DC67ED73-EBB7-48BB-9DB2-6F771B9A32BA}|proyecto_final_\\proyecto_final_.csproj|C:\\Users\\ACER\\source\\repos\\proyecto_final_\\proyecto_final_\\citas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DC67ED73-EBB7-48BB-9DB2-6F771B9A32BA}|proyecto_final_\\proyecto_final_.csproj|solutionrelative:proyecto_final_\\citas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DC67ED73-EBB7-48BB-9DB2-6F771B9A32BA}|proyecto_final_\\proyecto_final_.csproj|C:\\Users\\ACER\\source\\repos\\proyecto_final_\\proyecto_final_\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DC67ED73-EBB7-48BB-9DB2-6F771B9A32BA}|proyecto_final_\\proyecto_final_.csproj|solutionrelative:proyecto_final_\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC67ED73-EBB7-48BB-9DB2-6F771B9A32BA}|proyecto_final_\\proyecto_final_.csproj|C:\\Users\\ACER\\source\\repos\\proyecto_final_\\proyecto_final_\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DC67ED73-EBB7-48BB-9DB2-6F771B9A32BA}|proyecto_final_\\proyecto_final_.csproj|solutionrelative:proyecto_final_\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC67ED73-EBB7-48BB-9DB2-6F771B9A32BA}|proyecto_final_\\proyecto_final_.csproj|C:\\Users\\ACER\\source\\repos\\proyecto_final_\\proyecto_final_\\citas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DC67ED73-EBB7-48BB-9DB2-6F771B9A32BA}|proyecto_final_\\proyecto_final_.csproj|solutionrelative:proyecto_final_\\citas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DC67ED73-EBB7-48BB-9DB2-6F771B9A32BA}|proyecto_final_\\proyecto_final_.csproj|C:\\Users\\ACER\\source\\repos\\proyecto_final_\\proyecto_final_\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -92,14 +92,14 @@
               "RelativeDocumentMoniker": "proyecto_final_\\Form3.cs",
               "ToolTip": "C:\\Users\\ACER\\source\\repos\\proyecto_final_\\proyecto_final_\\Form3.cs",
               "RelativeToolTip": "proyecto_final_\\Form3.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAmwCAAAABEAAAA",
+              "ViewState": "AQIAACAAAAAAAAAAAAAuwC4AAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-01T05:39:33.695Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Form3.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\proyecto_final_\\proyecto_final_\\Form3.cs",
               "RelativeDocumentMoniker": "proyecto_final_\\Form3.cs",
@@ -121,7 +121,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\proyecto_final_\\proyecto_final_\\Form1.cs",
               "RelativeDocumentMoniker": "proyecto_final_\\Form1.cs",
@@ -144,19 +144,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "citas.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\proyecto_final_\\proyecto_final_\\citas.cs",
               "RelativeDocumentMoniker": "proyecto_final_\\citas.cs",
               "ToolTip": "C:\\Users\\ACER\\source\\repos\\proyecto_final_\\proyecto_final_\\citas.cs",
               "RelativeToolTip": "proyecto_final_\\citas.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEIAAAAqAAAA",
+              "ViewState": "AQIAACMAAAAAAAAAAAA3wEIAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-01T04:38:56.513Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "citas.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\proyecto_final_\\proyecto_final_\\citas.cs",
               "RelativeDocumentMoniker": "proyecto_final_\\citas.cs",
