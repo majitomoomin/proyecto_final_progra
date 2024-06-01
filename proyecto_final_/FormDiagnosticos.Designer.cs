@@ -77,11 +77,11 @@
             // labelDiagnosis
             // 
             labelDiagnosis.AutoSize = true;
-            labelDiagnosis.Location = new Point(32, 387);
+            labelDiagnosis.Location = new Point(13, 387);
             labelDiagnosis.Name = "labelDiagnosis";
-            labelDiagnosis.Size = new Size(74, 20);
+            labelDiagnosis.Size = new Size(89, 20);
             labelDiagnosis.TabIndex = 3;
-            labelDiagnosis.Text = "Diagnosis";
+            labelDiagnosis.Text = "Diagnóstico";
             // 
             // labelMedicina
             // 

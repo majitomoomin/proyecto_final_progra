@@ -39,7 +39,7 @@ namespace proyecto_final_
                 using (SqlConnection connection = new SqlConnection(cadenaConexion))
                 {
                     connection.Open();
-                    using (SqlCommand cmd = new SqlCommand("INSERT INTO PacientesMas (Sintomas, Procedimiento_med, Diagnosis, Alergias, Medicamentos, pid) VALUES (@Sintomas, @Procedimiento_med, @Diagnosis, @Alergias, @Medicamentos, @pid)", connection))
+                    using (SqlCommand cmd = new SqlCommand("INSERT INTO PacienteMas (Sintomas, Procedimiento_med, Diagnosis, Alergias, Medicamentos, pid) VALUES (@Sintomas, @Procedimiento_med, @Diagnosis, @Alergias, @Medicamentos, @pid)", connection))
                     {
                         cmd.Parameters.AddWithValue("@Sintomas", Sintomas);
                         cmd.Parameters.AddWithValue("@Procedimiento_med", Procedimiento_med);
