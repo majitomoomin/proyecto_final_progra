@@ -42,6 +42,7 @@
             txtpid = new TextBox();
             dgwCitas = new DataGridView();
             button1 = new Button();
+            button3 = new Button();
             ((System.ComponentModel.ISupportInitialize)dgwCitas).BeginInit();
             SuspendLayout();
             // 
@@ -181,11 +182,24 @@
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
+            // button3
+            // 
+            button3.BackColor = Color.SkyBlue;
+            button3.Location = new Point(34, 385);
+            button3.Margin = new Padding(3, 4, 3, 4);
+            button3.Name = "button3";
+            button3.Size = new Size(154, 56);
+            button3.TabIndex = 25;
+            button3.Text = "Guardar Cita Actualizada";
+            button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
+            // 
             // Citas
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(914, 524);
+            Controls.Add(button3);
             Controls.Add(button1);
             Controls.Add(dgwCitas);
             Controls.Add(txtpid);
@@ -225,5 +239,6 @@
         private TextBox txtpid;
         private DataGridView dgwCitas;
         private Button button1;
+        private Button button3;
     }
 }
