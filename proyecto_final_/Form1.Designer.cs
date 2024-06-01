@@ -34,6 +34,7 @@
             lblUsuario = new Label();
             lblContraseña = new Label();
             btnLogin = new Button();
+            cbRol = new ComboBox();
             SuspendLayout();
             // 
             // txtUsuario
@@ -81,12 +82,23 @@
             btnLogin.UseVisualStyleBackColor = false;
             btnLogin.Click += btnLogin_Click;
             // 
+            // cbRol
+            // 
+            cbRol.FormattingEnabled = true;
+            cbRol.Items.AddRange(new object[] { "Doctor", "Enfermero" });
+            cbRol.Location = new Point(627, 98);
+            cbRol.Name = "cbRol";
+            cbRol.Size = new Size(49, 23);
+            cbRol.TabIndex = 5;
+            cbRol.Text = "Rol";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(695, 404);
+            Controls.Add(cbRol);
             Controls.Add(btnLogin);
             Controls.Add(lblContraseña);
             Controls.Add(lblUsuario);
@@ -106,5 +118,6 @@
         private Label lblUsuario;
         private Label lblContraseña;
         private Button btnLogin;
+        private ComboBox cbRol;
     }
 }

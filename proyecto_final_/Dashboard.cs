@@ -162,6 +162,27 @@ namespace proyecto_final_
             mensajes.Show();
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            labelindicador2.ForeColor = Color.Black;
+            labelindicador1.ForeColor = Color.Black;
+            labelindicador3.ForeColor = Color.Black;
+            labelindicador4.ForeColor = Color.Black;
+            labelindicador5.ForeColor = Color.Black;
+            label1.ForeColor = Color.Red;
+
+            //mostrar ventana agregar citas
+            panel1.Visible = true;
+            NotasClinicas notasClinicas = new NotasClinicas();
+
+            notasClinicas.TopLevel = false;
+            notasClinicas.FormBorderStyle = FormBorderStyle.None;
+            notasClinicas.Dock = DockStyle.Fill;
+            panel1.Controls.Clear();
+            panel1.Controls.Add(notasClinicas);
+            notasClinicas.Show();
+        }
     }
 }
 

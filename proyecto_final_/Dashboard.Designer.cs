@@ -47,6 +47,8 @@
             panel1 = new Panel();
             label1 = new Label();
             btnMensajes = new Button();
+            btnNotas = new Button();
+            label2 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
@@ -65,7 +67,12 @@
             // btnAgregar_pacientes
             // 
             btnAgregar_pacientes.BackColor = Color.SkyBlue;
+<<<<<<< HEAD
+            btnAgregar_pacientes.Location = new Point(29, 58);
+            btnAgregar_pacientes.Margin = new Padding(3, 2, 3, 2);
+=======
             btnAgregar_pacientes.Location = new Point(33, 95);
+>>>>>>> 472b688b93ebc8f5ce91fa5bc59549ecb0be37be
             btnAgregar_pacientes.Name = "btnAgregar_pacientes";
             btnAgregar_pacientes.Size = new Size(194, 29);
             btnAgregar_pacientes.TabIndex = 1;
@@ -76,7 +83,12 @@
             // btnDiagnostico
             // 
             btnDiagnostico.BackColor = Color.SkyBlue;
+<<<<<<< HEAD
+            btnDiagnostico.Location = new Point(29, 134);
+            btnDiagnostico.Margin = new Padding(3, 2, 3, 2);
+=======
             btnDiagnostico.Location = new Point(34, 204);
+>>>>>>> 472b688b93ebc8f5ce91fa5bc59549ecb0be37be
             btnDiagnostico.Name = "btnDiagnostico";
             btnDiagnostico.Size = new Size(194, 51);
             btnDiagnostico.TabIndex = 2;
@@ -87,7 +99,12 @@
             // btnHistorial_Med
             // 
             btnHistorial_Med.BackColor = Color.SkyBlue;
+<<<<<<< HEAD
+            btnHistorial_Med.Location = new Point(29, 190);
+            btnHistorial_Med.Margin = new Padding(3, 2, 3, 2);
+=======
             btnHistorial_Med.Location = new Point(34, 280);
+>>>>>>> 472b688b93ebc8f5ce91fa5bc59549ecb0be37be
             btnHistorial_Med.Name = "btnHistorial_Med";
             btnHistorial_Med.Size = new Size(194, 29);
             btnHistorial_Med.TabIndex = 3;
@@ -98,7 +115,12 @@
             // btnInfo
             // 
             btnInfo.BackColor = Color.SkyBlue;
+<<<<<<< HEAD
+            btnInfo.Location = new Point(29, 315);
+            btnInfo.Margin = new Padding(3, 2, 3, 2);
+=======
             btnInfo.Location = new Point(34, 392);
+>>>>>>> 472b688b93ebc8f5ce91fa5bc59549ecb0be37be
             btnInfo.Name = "btnInfo";
             btnInfo.Size = new Size(194, 29);
             btnInfo.TabIndex = 4;
@@ -119,7 +141,12 @@
             // btnCitas
             // 
             btnCitas.BackColor = Color.SkyBlue;
+<<<<<<< HEAD
+            btnCitas.Location = new Point(29, 96);
+            btnCitas.Margin = new Padding(3, 2, 3, 2);
+=======
             btnCitas.Location = new Point(33, 147);
+>>>>>>> 472b688b93ebc8f5ce91fa5bc59549ecb0be37be
             btnCitas.Name = "btnCitas";
             btnCitas.Size = new Size(194, 29);
             btnCitas.TabIndex = 6;
@@ -139,7 +166,12 @@
             // btnSalir
             // 
             btnSalir.BackColor = Color.LightCoral;
+<<<<<<< HEAD
+            btnSalir.Location = new Point(55, 342);
+            btnSalir.Margin = new Padding(3, 2, 3, 2);
+=======
             btnSalir.Location = new Point(63, 440);
+>>>>>>> 472b688b93ebc8f5ce91fa5bc59549ecb0be37be
             btnSalir.Name = "btnSalir";
             btnSalir.Size = new Size(114, 29);
             btnSalir.TabIndex = 8;
@@ -150,7 +182,12 @@
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+<<<<<<< HEAD
+            pictureBox2.Location = new Point(5, 377);
+            pictureBox2.Margin = new Padding(3, 2, 3, 2);
+=======
             pictureBox2.Location = new Point(6, 475);
+>>>>>>> 472b688b93ebc8f5ce91fa5bc59549ecb0be37be
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(222, 104);
             pictureBox2.TabIndex = 9;
@@ -161,7 +198,11 @@
             labelindicador1.AutoSize = true;
             labelindicador1.BackColor = Color.White;
             labelindicador1.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+<<<<<<< HEAD
+            labelindicador1.Location = new Point(11, 61);
+=======
             labelindicador1.Location = new Point(13, 95);
+>>>>>>> 472b688b93ebc8f5ce91fa5bc59549ecb0be37be
             labelindicador1.Name = "labelindicador1";
             labelindicador1.Size = new Size(21, 23);
             labelindicador1.TabIndex = 10;
@@ -172,7 +213,11 @@
             labelindicador2.AutoSize = true;
             labelindicador2.BackColor = Color.White;
             labelindicador2.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+<<<<<<< HEAD
+            labelindicador2.Location = new Point(11, 99);
+=======
             labelindicador2.Location = new Point(13, 147);
+>>>>>>> 472b688b93ebc8f5ce91fa5bc59549ecb0be37be
             labelindicador2.Name = "labelindicador2";
             labelindicador2.Size = new Size(21, 23);
             labelindicador2.TabIndex = 11;
@@ -183,7 +228,11 @@
             labelindicador3.AutoSize = true;
             labelindicador3.BackColor = Color.White;
             labelindicador3.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+<<<<<<< HEAD
+            labelindicador3.Location = new Point(11, 143);
+=======
             labelindicador3.Location = new Point(13, 216);
+>>>>>>> 472b688b93ebc8f5ce91fa5bc59549ecb0be37be
             labelindicador3.Name = "labelindicador3";
             labelindicador3.Size = new Size(21, 23);
             labelindicador3.TabIndex = 12;
@@ -195,7 +244,11 @@
             labelindicador4.AutoSize = true;
             labelindicador4.BackColor = Color.White;
             labelindicador4.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+<<<<<<< HEAD
+            labelindicador4.Location = new Point(11, 190);
+=======
             labelindicador4.Location = new Point(13, 280);
+>>>>>>> 472b688b93ebc8f5ce91fa5bc59549ecb0be37be
             labelindicador4.Name = "labelindicador4";
             labelindicador4.Size = new Size(21, 23);
             labelindicador4.TabIndex = 13;
@@ -206,7 +259,11 @@
             labelindicador5.AutoSize = true;
             labelindicador5.BackColor = Color.White;
             labelindicador5.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+<<<<<<< HEAD
+            labelindicador5.Location = new Point(11, 315);
+=======
             labelindicador5.Location = new Point(13, 392);
+>>>>>>> 472b688b93ebc8f5ce91fa5bc59549ecb0be37be
             labelindicador5.Name = "labelindicador5";
             labelindicador5.Size = new Size(21, 23);
             labelindicador5.TabIndex = 14;
@@ -225,7 +282,11 @@
             label1.AutoSize = true;
             label1.BackColor = Color.White;
             label1.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+<<<<<<< HEAD
+            label1.Location = new Point(11, 231);
+=======
             label1.Location = new Point(13, 336);
+>>>>>>> 472b688b93ebc8f5ce91fa5bc59549ecb0be37be
             label1.Name = "label1";
             label1.Size = new Size(21, 23);
             label1.TabIndex = 16;
@@ -234,7 +295,12 @@
             // btnMensajes
             // 
             btnMensajes.BackColor = Color.SkyBlue;
+<<<<<<< HEAD
+            btnMensajes.Location = new Point(29, 228);
+            btnMensajes.Margin = new Padding(3, 2, 3, 2);
+=======
             btnMensajes.Location = new Point(33, 335);
+>>>>>>> 472b688b93ebc8f5ce91fa5bc59549ecb0be37be
             btnMensajes.Name = "btnMensajes";
             btnMensajes.Size = new Size(194, 29);
             btnMensajes.TabIndex = 17;
@@ -242,12 +308,41 @@
             btnMensajes.UseVisualStyleBackColor = false;
             btnMensajes.Click += btnMensajes_Click;
             // 
+            // btnNotas
+            // 
+            btnNotas.BackColor = Color.SkyBlue;
+            btnNotas.Location = new Point(29, 273);
+            btnNotas.Margin = new Padding(3, 2, 3, 2);
+            btnNotas.Name = "btnNotas";
+            btnNotas.Size = new Size(170, 22);
+            btnNotas.TabIndex = 18;
+            btnNotas.Text = "Notas Clínicas";
+            btnNotas.UseVisualStyleBackColor = false;
+            btnNotas.Click += button1_Click;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.BackColor = Color.White;
+            label2.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Location = new Point(11, 273);
+            label2.Name = "label2";
+            label2.Size = new Size(18, 19);
+            label2.TabIndex = 19;
+            label2.Text = ">";
+            // 
             // Dashboard
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
+<<<<<<< HEAD
+            ClientSize = new Size(969, 477);
+            Controls.Add(label2);
+            Controls.Add(btnNotas);
+=======
             ClientSize = new Size(1107, 727);
+>>>>>>> 472b688b93ebc8f5ce91fa5bc59549ecb0be37be
             Controls.Add(btnMensajes);
             Controls.Add(label1);
             Controls.Add(panel1);
@@ -295,5 +390,7 @@
         private Panel panel1;
         private Label label1;
         private Button btnMensajes;
+        private Button btnNotas;
+        private Label label2;
     }
 }
