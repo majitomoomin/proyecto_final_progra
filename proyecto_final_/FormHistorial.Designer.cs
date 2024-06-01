@@ -38,7 +38,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(346, 30);
+            label1.Location = new Point(66, 9);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
             label1.Size = new Size(207, 26);
@@ -48,18 +48,18 @@
             // dataGridViewHistorial
             // 
             dataGridViewHistorial.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewHistorial.Location = new Point(111, 91);
+            dataGridViewHistorial.Location = new Point(49, 47);
             dataGridViewHistorial.Margin = new Padding(2);
             dataGridViewHistorial.Name = "dataGridViewHistorial";
             dataGridViewHistorial.RowHeadersWidth = 82;
-            dataGridViewHistorial.Size = new Size(713, 367);
+            dataGridViewHistorial.Size = new Size(713, 421);
             dataGridViewHistorial.TabIndex = 1;
             dataGridViewHistorial.CellContentClick += dataGridViewHistorial_CellContentClick;
             // 
             // btnMostrarHistorial
             // 
             btnMostrarHistorial.BackColor = SystemColors.GradientActiveCaption;
-            btnMostrarHistorial.Location = new Point(614, 26);
+            btnMostrarHistorial.Location = new Point(313, 5);
             btnMostrarHistorial.Margin = new Padding(3, 4, 3, 4);
             btnMostrarHistorial.Name = "btnMostrarHistorial";
             btnMostrarHistorial.Size = new Size(154, 36);
@@ -72,7 +72,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(914, 600);
+            ClientSize = new Size(833, 602);
             Controls.Add(btnMostrarHistorial);
             Controls.Add(dataGridViewHistorial);
             Controls.Add(label1);
