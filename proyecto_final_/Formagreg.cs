@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Configuration;
+using proyecto_final_.Properties;
 
 namespace proyecto_final_
 {
@@ -104,7 +105,21 @@ namespace proyecto_final_
 
 
 
-        
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //mostrar ventana listado de pacientes
+            panel1.Visible = true;
+            Form2 form2 = new Form2();
+
+            form2.TopLevel = false;
+            form2.FormBorderStyle = FormBorderStyle.None;
+            form2.Dock = DockStyle.Fill;
+            panel1.Controls.Clear();
+            panel1.Controls.Add(form2);
+            form2.Show();
+        }
     }
-    }
-    }
+}

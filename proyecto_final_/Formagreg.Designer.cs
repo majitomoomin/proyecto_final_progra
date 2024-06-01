@@ -47,6 +47,7 @@
             txtNombre = new TextBox();
             labelNombre = new Label();
             ComboSexo = new ComboBox();
+            button1 = new Button();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -61,6 +62,7 @@
             // 
             // panel1
             // 
+            panel1.Controls.Add(button1);
             panel1.Controls.Add(btnGuardarPaciente);
             panel1.Controls.Add(txtIDPaciente);
             panel1.Controls.Add(label_ID);
@@ -86,7 +88,7 @@
             // btnGuardarPaciente
             // 
             btnGuardarPaciente.BackColor = Color.SkyBlue;
-            btnGuardarPaciente.Location = new Point(340, 491);
+            btnGuardarPaciente.Location = new Point(144, 488);
             btnGuardarPaciente.Name = "btnGuardarPaciente";
             btnGuardarPaciente.Size = new Size(94, 29);
             btnGuardarPaciente.TabIndex = 17;
@@ -224,6 +226,17 @@
             ComboSexo.Size = new Size(556, 28);
             ComboSexo.TabIndex = 0;
             // 
+            // button1
+            // 
+            button1.BackColor = Color.Pink;
+            button1.Location = new Point(374, 488);
+            button1.Name = "button1";
+            button1.Size = new Size(176, 29);
+            button1.TabIndex = 18;
+            button1.Text = "Ver listado de pacientes";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
+            // 
             // Formagreg
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -260,5 +273,6 @@
         private TextBox txtNombre;
         private Label labelNombre;
         private ComboBox ComboSexo;
+        private Button button1;
     }
 }

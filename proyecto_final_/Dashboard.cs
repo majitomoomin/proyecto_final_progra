@@ -144,12 +144,12 @@ namespace proyecto_final_
 
         private void btnMensajes_Click(object sender, EventArgs e)
         {
-            labelindicador2.ForeColor = Color.Red;
+            labelindicador2.ForeColor = Color.Black;
             labelindicador1.ForeColor = Color.Black;
             labelindicador3.ForeColor = Color.Black;
             labelindicador4.ForeColor = Color.Black;
             labelindicador5.ForeColor = Color.Black;
-
+            label1.ForeColor = Color.Red;
             //mostrar ventana agregar citas
             panel1.Visible = true;
             Mensajes mensajes = new Mensajes();

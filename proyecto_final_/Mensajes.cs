@@ -14,7 +14,7 @@ namespace proyecto_final_
 {
     public partial class Mensajes : Form
     {
-        string connectionString = "data source=LAPTOP-GDV6M1II\\SQLEXPRESS;database=clinica;integrated security=True";
+        string connectionString = "Persist Security Info=False;User ID=sa; pwd=12345678;Initial Catalog=hospital;Encrypt=True;TrustServerCertificate=True;Data Source=LAPTOP-GDV6M1II\\SQLEXPRESS";
         public Mensajes()
         {
             InitializeComponent();
@@ -62,7 +62,7 @@ namespace proyecto_final_
                 string query = "INSERT INTO Mensajes (Emisor, MensajeTexto) VALUES (@Emisor, @MensajeTexto)";
                 SqlCommand cmd = new SqlCommand(query, con);
                 cmd.Parameters.AddWithValue("@Emisor", emisor);
-                cmd.Parameters.AddWithValue("@MessageText", mensajeTexto);
+                cmd.Parameters.AddWithValue("@MensajeTexto", mensajeTexto);
 
                 con.Open();
                 cmd.ExecuteNonQuery();

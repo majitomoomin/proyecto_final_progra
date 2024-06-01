@@ -28,32 +28,51 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
+            label2 = new Label();
+            dataGridViewListado = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewListado).BeginInit();
             SuspendLayout();
             // 
-            // label1
+            // label2
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(280, 27);
-            label1.Name = "label1";
-            label1.Size = new Size(86, 15);
-            label1.TabIndex = 0;
-            label1.Text = "Sistema clinico";
+            label2.AutoSize = true;
+            label2.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.Location = new Point(358, 33);
+            label2.Margin = new Padding(4, 0, 4, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(199, 26);
+            label2.TabIndex = 1;
+            label2.Text = "Listado de pacientes";
+            // 
+            // dataGridViewListado
+            // 
+            dataGridViewListado.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewListado.Location = new Point(69, 77);
+            dataGridViewListado.Margin = new Padding(2);
+            dataGridViewListado.Name = "dataGridViewListado";
+            dataGridViewListado.RowHeadersWidth = 82;
+            dataGridViewListado.Size = new Size(713, 367);
+            dataGridViewListado.TabIndex = 2;
             // 
             // Form2
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(label1);
+            ClientSize = new Size(914, 600);
+            Controls.Add(dataGridViewListado);
+            Controls.Add(label2);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "Form2";
-            Text = "Form2";
+            Text = "Listado de pacientes";
+            Load += Form2_Load;
+            ((System.ComponentModel.ISupportInitialize)dataGridViewListado).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private Label label1;
+        private Label label2;
+        private DataGridView dataGridViewListado;
     }
 }

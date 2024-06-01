@@ -61,15 +61,52 @@ namespace proyecto_final_
                 txtMedicamentos.Clear();
                 txtpid.Clear();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                MessageBox.Show("No se encontró el registro o algún carácter es incorrecto.");
+                MessageBox.Show("Error "+  ex.Message);
             }
         }
 
         private void txtpid_TextChanged(object sender, EventArgs e)
         {
+            if (!string.IsNullOrEmpty(txtpid.Text))
+            {
+                // Verificar si el texto es un número entero válido
+                if (int.TryParse(txtpid.Text, out int pid))
+                {
+                    string cadenaConexion = "Persist Security Info=False;User ID=sa; pwd=12345678;Initial Catalog=hospital;Encrypt=True;TrustServerCertificate=True;Data Source=LAPTOP-GDV6M1II\\SQLEXPRESS";
+                    try
+                    {
+                        using (SqlConnection connection = new SqlConnection(cadenaConexion))
+                        {
+                            connection.Open();
+                            using (SqlCommand cmd = new SqlCommand("SELECT * FROM AgregarPaciente WHERE pid = @pid", connection))
+                            {
+                                cmd.Parameters.AddWithValue("@pid", pid);
 
+                                using (SqlDataAdapter DA = new SqlDataAdapter(cmd))
+                                {
+                                    DataSet DS = new DataSet();
+                                    DA.Fill(DS);
+                                    dataGridViewDiagnosis.DataSource = DS.Tables[0];
+                                }
+                            }
+                        }
+                    }
+                    catch (SqlException sqlEx)
+                    {
+                        MessageBox.Show($"Error de base de datos: {sqlEx.Message}");
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show($"Error: {ex.Message}");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Por favor, ingrese un ID de paciente válido.");
+                }
+            }
 
         }
 
