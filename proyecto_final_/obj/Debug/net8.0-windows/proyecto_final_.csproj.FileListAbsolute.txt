@@ -152,3 +152,4 @@ C:\Users\HP BLUE\Desktop\proy_final_progra\proyecto_final_progra\proyecto_final_
 C:\Users\HP BLUE\Desktop\proy_final_progra\proyecto_final_progra\proyecto_final_\obj\Debug\net8.0-windows\proyecto_final_.pdb
 C:\Users\HP BLUE\Desktop\proy_final_progra\proyecto_final_progra\proyecto_final_\obj\Debug\net8.0-windows\proyecto_final_.genruntimeconfig.cache
 C:\Users\HP BLUE\Desktop\proy_final_progra\proyecto_final_progra\proyecto_final_\obj\Debug\net8.0-windows\ref\proyecto_final_.dll
+C:\Users\ACER\source\repos\proyecto_final_\proyecto_final_\obj\Debug\net8.0-windows\proyecto_final_.NotasClinicas.resources

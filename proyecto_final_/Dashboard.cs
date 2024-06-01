@@ -172,7 +172,7 @@ namespace proyecto_final_
             labelindicador5.ForeColor = Color.Black;
             label1.ForeColor = Color.Red;
 
-            //mostrar ventana agregar citas
+            //mostrar ventana NOtas clinicas
             panel1.Visible = true;
             NotasClinicas notasClinicas = new NotasClinicas();
 
