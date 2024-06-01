@@ -46,15 +46,14 @@ namespace proyecto_final_
                 {
                     connection.Open();
                     string query = "INSERT INTO NotasClinicas (pid, Sintomas, Observaciones, DiagnosticoProvisional, PlanTratamiento) " +
-                                   "VALUES (@Sintomas, @Observaciones, @DiagnosticoProvisional, @PlanTratamiento, @pid)";
+                                   "VALUES (@pid, @Sintomas, @Observaciones, @DiagnosticoProvisional, @PlanTratamiento)";
                     using (SqlCommand cmd = new SqlCommand(query, connection))
                     {
                         cmd.Parameters.AddWithValue("@pid", pid);
-                        cmd.Parameters.AddWithValue("@Sintomas", sintomas);
-                        cmd.Parameters.AddWithValue("@Observaciones", observaciones);
-                        cmd.Parameters.AddWithValue("@DiagnosticoProvisional", diagnosticoProvisional);
-                        cmd.Parameters.AddWithValue("@PlanTratamiento", planTratamiento);
-                        
+                        cmd.Parameters.AddWithValue("@Sintomas", txtSintomas.Text);
+                        cmd.Parameters.AddWithValue("@Observaciones", txtObservaciones.Text);
+                        cmd.Parameters.AddWithValue("@DiagnosticoProvisional", txtDiagnosticoProv.Text);
+                        cmd.Parameters.AddWithValue("@PlanTratamiento", txtPlanTra.Text);
 
                         cmd.ExecuteNonQuery();
                     }
@@ -70,7 +69,7 @@ namespace proyecto_final_
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error al guardar la nota clínica: {ex.Message}");
+                MessageBox.Show("Error al guardar la nota clínica: " + ex.Message);
             }
         }
     }
