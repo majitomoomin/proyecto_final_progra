@@ -34,8 +34,6 @@
             labelGenero = new Label();
             ComboSexo = new ComboBox();
             panelcampos = new Panel();
-            txtSangre = new TextBox();
-            labelTipoSangre = new Label();
             txtEdad = new TextBox();
             labelEdad = new Label();
             txtNoContacto = new TextBox();
@@ -49,6 +47,8 @@
             label_ID = new Label();
             txtEnfermedades = new TextBox();
             labelEnfermedades = new Label();
+            labelTipoSangre = new Label();
+            txtSangre = new TextBox();
             ((System.ComponentModel.ISupportInitialize)dataGridViewListado).BeginInit();
             panelcampos.SuspendLayout();
             SuspendLayout();
@@ -128,22 +128,6 @@
             panelcampos.Name = "panelcampos";
             panelcampos.Size = new Size(822, 368);
             panelcampos.TabIndex = 25;
-            // 
-            // txtSangre
-            // 
-            txtSangre.Location = new Point(473, 147);
-            txtSangre.Name = "txtSangre";
-            txtSangre.Size = new Size(290, 27);
-            txtSangre.TabIndex = 26;
-            // 
-            // labelTipoSangre
-            // 
-            labelTipoSangre.AutoSize = true;
-            labelTipoSangre.Location = new Point(366, 150);
-            labelTipoSangre.Name = "labelTipoSangre";
-            labelTipoSangre.Size = new Size(110, 20);
-            labelTipoSangre.TabIndex = 26;
-            labelTipoSangre.Text = "Tipo de Sangre";
             // 
             // txtEdad
             // 
@@ -251,6 +235,22 @@
             labelEnfermedades.Size = new Size(338, 20);
             labelEnfermedades.TabIndex = 23;
             labelEnfermedades.Text = "Enfermedad importante que se sufra/haya sufrido";
+            // 
+            // labelTipoSangre
+            // 
+            labelTipoSangre.AutoSize = true;
+            labelTipoSangre.Location = new Point(361, 154);
+            labelTipoSangre.Name = "labelTipoSangre";
+            labelTipoSangre.Size = new Size(110, 20);
+            labelTipoSangre.TabIndex = 30;
+            labelTipoSangre.Text = "Tipo de Sangre";
+            // 
+            // txtSangre
+            // 
+            txtSangre.Location = new Point(473, 154);
+            txtSangre.Name = "txtSangre";
+            txtSangre.Size = new Size(290, 27);
+            txtSangre.TabIndex = 31;
             // 
             // Form2
             // 

@@ -41,83 +41,89 @@
             labelpid = new Label();
             txtpid = new TextBox();
             dgwCitas = new DataGridView();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)dgwCitas).BeginInit();
             SuspendLayout();
             // 
             // lblNombrePaciente
             // 
             lblNombrePaciente.AutoSize = true;
-            lblNombrePaciente.Location = new Point(30, 58);
+            lblNombrePaciente.Location = new Point(34, 77);
             lblNombrePaciente.Name = "lblNombrePaciente";
-            lblNombrePaciente.Size = new Size(118, 15);
+            lblNombrePaciente.Size = new Size(148, 20);
             lblNombrePaciente.TabIndex = 0;
             lblNombrePaciente.Text = "Nombre del Paciente";
             // 
             // lblFechaCita
             // 
             lblFechaCita.AutoSize = true;
-            lblFechaCita.Location = new Point(58, 85);
+            lblFechaCita.Location = new Point(66, 113);
             lblFechaCita.Name = "lblFechaCita";
-            lblFechaCita.Size = new Size(90, 15);
+            lblFechaCita.Size = new Size(114, 20);
             lblFechaCita.TabIndex = 1;
             lblFechaCita.Text = "Fecha de la Cita";
             // 
             // txtNombrePaciente
             // 
-            txtNombrePaciente.Location = new Point(176, 50);
+            txtNombrePaciente.Location = new Point(201, 67);
+            txtNombrePaciente.Margin = new Padding(3, 4, 3, 4);
             txtNombrePaciente.Name = "txtNombrePaciente";
-            txtNombrePaciente.Size = new Size(387, 23);
+            txtNombrePaciente.Size = new Size(442, 27);
             txtNombrePaciente.TabIndex = 2;
             // 
             // txtMotivoCita
             // 
-            txtMotivoCita.Location = new Point(176, 137);
+            txtMotivoCita.Location = new Point(201, 183);
+            txtMotivoCita.Margin = new Padding(3, 4, 3, 4);
             txtMotivoCita.Name = "txtMotivoCita";
-            txtMotivoCita.Size = new Size(387, 23);
+            txtMotivoCita.Size = new Size(442, 27);
             txtMotivoCita.TabIndex = 3;
             // 
             // dtpFechaCita
             // 
-            dtpFechaCita.Location = new Point(176, 79);
+            dtpFechaCita.Location = new Point(201, 105);
+            dtpFechaCita.Margin = new Padding(3, 4, 3, 4);
             dtpFechaCita.MinDate = new DateTime(2024, 5, 29, 0, 0, 0, 0);
             dtpFechaCita.Name = "dtpFechaCita";
-            dtpFechaCita.Size = new Size(229, 23);
+            dtpFechaCita.Size = new Size(261, 27);
             dtpFechaCita.TabIndex = 4;
             dtpFechaCita.Value = new DateTime(2024, 6, 1, 0, 0, 0, 0);
             // 
             // lblHoraCita
             // 
             lblHoraCita.AutoSize = true;
-            lblHoraCita.Location = new Point(63, 111);
+            lblHoraCita.Location = new Point(72, 148);
             lblHoraCita.Name = "lblHoraCita";
-            lblHoraCita.Size = new Size(85, 15);
+            lblHoraCita.Size = new Size(109, 20);
             lblHoraCita.TabIndex = 5;
             lblHoraCita.Text = "Hora de la Cita";
             // 
             // dtpHoraCita
             // 
             dtpHoraCita.Format = DateTimePickerFormat.Time;
-            dtpHoraCita.Location = new Point(176, 108);
+            dtpHoraCita.Location = new Point(201, 144);
+            dtpHoraCita.Margin = new Padding(3, 4, 3, 4);
             dtpHoraCita.Name = "dtpHoraCita";
-            dtpHoraCita.Size = new Size(80, 23);
+            dtpHoraCita.Size = new Size(91, 27);
             dtpHoraCita.TabIndex = 6;
             dtpHoraCita.Value = new DateTime(2024, 5, 29, 0, 0, 0, 0);
             // 
             // lblMotivoCita
             // 
             lblMotivoCita.AutoSize = true;
-            lblMotivoCita.Location = new Point(51, 137);
+            lblMotivoCita.Location = new Point(58, 183);
             lblMotivoCita.Name = "lblMotivoCita";
-            lblMotivoCita.Size = new Size(97, 15);
+            lblMotivoCita.Size = new Size(123, 20);
             lblMotivoCita.TabIndex = 7;
             lblMotivoCita.Text = "Motivo de la Cita";
             // 
             // btnGuardarCita
             // 
-            btnGuardarCita.BackColor = SystemColors.GradientActiveCaption;
-            btnGuardarCita.Location = new Point(30, 183);
+            btnGuardarCita.BackColor = Color.SkyBlue;
+            btnGuardarCita.Location = new Point(34, 244);
+            btnGuardarCita.Margin = new Padding(3, 4, 3, 4);
             btnGuardarCita.Name = "btnGuardarCita";
-            btnGuardarCita.Size = new Size(135, 27);
+            btnGuardarCita.Size = new Size(154, 36);
             btnGuardarCita.TabIndex = 8;
             btnGuardarCita.Text = "Guardar Cita";
             btnGuardarCita.UseVisualStyleBackColor = false;
@@ -126,9 +132,10 @@
             // button2
             // 
             button2.BackColor = Color.Red;
-            button2.Location = new Point(30, 216);
+            button2.Location = new Point(34, 288);
+            button2.Margin = new Padding(3, 4, 3, 4);
             button2.Name = "button2";
-            button2.Size = new Size(135, 34);
+            button2.Size = new Size(154, 45);
             button2.TabIndex = 9;
             button2.Text = "Cancelar";
             button2.UseVisualStyleBackColor = false;
@@ -137,33 +144,49 @@
             // labelpid
             // 
             labelpid.AutoSize = true;
-            labelpid.Location = new Point(42, 24);
+            labelpid.Location = new Point(48, 32);
             labelpid.Name = "labelpid";
-            labelpid.Size = new Size(106, 15);
+            labelpid.Size = new Size(135, 20);
             labelpid.TabIndex = 21;
             labelpid.Text = "No. Id del paciente";
             // 
             // txtpid
             // 
-            txtpid.Location = new Point(176, 21);
+            txtpid.Location = new Point(201, 28);
+            txtpid.Margin = new Padding(3, 4, 3, 4);
             txtpid.Name = "txtpid";
-            txtpid.Size = new Size(387, 23);
+            txtpid.Size = new Size(442, 27);
             txtpid.TabIndex = 22;
             // 
             // dgwCitas
             // 
             dgwCitas.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgwCitas.Location = new Point(176, 183);
+            dgwCitas.Location = new Point(201, 244);
+            dgwCitas.Margin = new Padding(3, 4, 3, 4);
             dgwCitas.Name = "dgwCitas";
-            dgwCitas.Size = new Size(470, 198);
+            dgwCitas.RowHeadersWidth = 51;
+            dgwCitas.Size = new Size(624, 264);
             dgwCitas.TabIndex = 23;
             dgwCitas.CellContentClick += dgwCitas_CellContentClick;
             // 
+            // button1
+            // 
+            button1.BackColor = Color.DarkOrange;
+            button1.Location = new Point(34, 341);
+            button1.Margin = new Padding(3, 4, 3, 4);
+            button1.Name = "button1";
+            button1.Size = new Size(154, 36);
+            button1.TabIndex = 24;
+            button1.Text = "Editar";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
+            // 
             // Citas
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 393);
+            ClientSize = new Size(914, 524);
+            Controls.Add(button1);
             Controls.Add(dgwCitas);
             Controls.Add(txtpid);
             Controls.Add(labelpid);
@@ -177,6 +200,7 @@
             Controls.Add(txtNombrePaciente);
             Controls.Add(lblFechaCita);
             Controls.Add(lblNombrePaciente);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "Citas";
             Text = "citas";
             Load += Citas_Load;
@@ -200,5 +224,6 @@
         private Label labelpid;
         private TextBox txtpid;
         private DataGridView dgwCitas;
+        private Button button1;
     }
 }
