@@ -45,8 +45,8 @@ namespace proyecto_final_
                 using (SqlConnection connection = new SqlConnection(cadenaConexion))
                 {
                     connection.Open();
-                    string query = "INSERT INTO NotasClinicas (pid, Sintomas, Observaciones, DiagnosticoProvisional, PlanTratamiento, HoraCreacion) " +
-                                   "VALUES (@Sintomas, @Observaciones, @DiagnosticoProvisional, @PlanTratamiento, @HoraCreacion, @pid)";
+                    string query = "INSERT INTO NotasClinicas (pid, Sintomas, Observaciones, DiagnosticoProvisional, PlanTratamiento) " +
+                                   "VALUES (@Sintomas, @Observaciones, @DiagnosticoProvisional, @PlanTratamiento, @pid)";
                     using (SqlCommand cmd = new SqlCommand(query, connection))
                     {
                         cmd.Parameters.AddWithValue("@pid", pid);
@@ -54,7 +54,7 @@ namespace proyecto_final_
                         cmd.Parameters.AddWithValue("@Observaciones", observaciones);
                         cmd.Parameters.AddWithValue("@DiagnosticoProvisional", diagnosticoProvisional);
                         cmd.Parameters.AddWithValue("@PlanTratamiento", planTratamiento);
-                        cmd.Parameters.AddWithValue("@HoraCreacion", DateTime.Now);
+                        
 
                         cmd.ExecuteNonQuery();
                     }
